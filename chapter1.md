@@ -1,3 +1,3 @@
 # Dando los primeros pasos
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+Al igual que no necesitamos ser ingenieros de telecomunicaciones para usar un móvil, tampoco hace falta ser informáticos para sacarle mucho partido a nuestra aula de informática.
