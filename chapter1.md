@@ -14,6 +14,10 @@ Pues está claro, conociendo físicamente nuestra Raspberry, sus partes y compon
 
 
 
+# Periféricos necesarios para crear una aula de Informática:
+
+Pues en realidad no demasiados aunque la elección entre unos u otros, puede facilitarnos mucho la tarea,
+
 
 
 
