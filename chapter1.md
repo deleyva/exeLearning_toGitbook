@@ -4,11 +4,15 @@ Al igual que no necesitamos ser ingenieros de telecomunicaciones para usar un m�
 
 # ¿Por dónde podemos empezar?;
 
- Pues está claro, conociendo físicamente nuestra Raspberry, sus partes y componentes fundamentales y porqué no, los multiples periféricos que le podemos añadir.
+Pues está claro, conociendo físicamente nuestra Raspberry, sus partes y componentes fundamentales y porqué no, los multiples periféricos que le podemos añadir.
 
-# Componentes principales de Raspberry Pi 3:
+# Componentes principales de Raspberry Pi 3\*:
 
 ![](/assets/componentes.jpg)
+
+**\(\* Elaboración propia\)**
+
+
 
 
 
