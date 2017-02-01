@@ -6,7 +6,7 @@ Ahora los jóvenes tienen contacto con la informática pero, aunque parezca para
 
 Como vemos no hay ningún secreto en su precio, ya que fuediseñada con el fin de ser lo más barato posible y llegar al máximo número de usuarios. Desde ese año es posible comprar las Raspberry Pi, aunque la fabricación se hace por lotes y a veces hay que esperar varios meses para que haya unidades disponibles dada su altísima demanda.
 
-Son varios los modelos que han aparecido hasta ahora y sin entrar en mucho detalle de cada uno de ellos, mostramos a continuación una tabla resumen con las características de cada uno de ellos.
+Son varios los modelos que han aparecido hasta ahora y, sin entrar en mucho detalle de cada uno de ellos, mostramos a continuación una tabla resumen con las características de cada uno de ellos.
 
 **TABLA COMPARATIVA DE LAS DIFERENTES VERSIONES DE RASPBERRY \***
 
