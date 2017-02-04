@@ -74,9 +74,46 @@ Recopilemos hasta ahora lo que Necesitamos...
 – Algunos cables Ethernet.  
 – Una Frambuesa Pi y tarjeta SD con un tamaño de al menos 128 MB \(así que sí, 2gb, 4gb, 8gb, etc tarjetas serán también trabajar
 
-
-
 Y ahora pasemos a Recopilar el software que vamos a necesitar, esta parte nos saldrá mucho más barata... de hecho es software gratuito y libre, por lo que solo tiene ventajas.
+
+## UBUNTU 14.04
+
+Sistema Operativo Linux.
+
+Para que nuestra aula de informática comience a tomar forma "digital" debemos previamente tomar una decisión, vamos a virtualizar el servidor esto es, Sobre Windows XP o superior vamos a instalar VirtualBox y allí crear una máquina virtual con Ubuntu 14.04 o bien vamos a instalar desde cero en nuestro equipo servidor Ubuntu 14.04.
+
+Mi recomendación es la última de las opciones.
+
+Así pues lo primero que necesitaremos será Ubuntu 14.04.
+
+## **PINET:**
+
+Pinet es un proyecto libre y de código abierto para ayudar a las escuelas establecer y gestionar un aula Raspberry Pi.  
+Se ha desarrollado junto a los maestros con la retroalimentación de más de 15 países de todo el mundo.  
+Sus características clave incluyen :
+
+*  Red basada cuentas de usuario – \* Cualquier estudiante puede sentarse en cualquier Pi frambuesa e ingrese.
+*  Sistema operativo basado en Red – Boot Toda Raspberry Pis un único sistema operativo Raspbian maestro.
+*  Las carpetas compartidas – Fácil de usar sistema de carpeta compartida para profesores y estudiantes.
+*  Sistema de recogida de Trabajo – colección trabajo simple sistema / submittion que permiten a los estudiantes a entregar en el trabajo.
+*  Las copias de seguridad automatizadas – Copia de seguridad automática de todos los estudiantes trabajan en una unidad externa periódicamente.
+*  Muchos más pequeñas características como la importación de usuarios por lotes, aula de integración de software de gestión, etc.
+
+
+
+Que vamos a conseguir con ambos sistemas en funcionamiento:
+
+**Las cuentas de usuario de red** : Las cuentas de los estudiantes de usuario se almacenan en el servidor central Pinet. Esto significa que pueden conectarse desde cualquier Raspberry Pi en el aula y no se pierde tiempo averiguando qué tarjeta SD pertenece a cada estudiante, o dicho de otra forma, las Raspberry Pi son intercambiables entre el alumnado.
+
+**El arranque de red: **El sistema operativo Raspbian con el que Arranca la Raspberry Pi, también se almacena en el servidor central, es decir, cada vez que se enciende se restablece. Esto  permite mantener un sistema operativo maestro perfecto, sin errores.
+
+**Carpetas compartidas y las copias de seguridad: **Es muy sencillo** ** configurar las carpetas compartidas para recursos con los estudiantes y también el uso de  copias de seguridad automáticas.
+
+**Fácil de instalar : **Pinet fue diseñado desde el principio para ser extremadamente fácil de configurar y mantener. De hecho son muchos los alumnos de menos de 12 años que han sido capaces de manejar a su antojo la red de equipos de este tipo de aulas.
+
+**Completamente gratuito: **Pinet es totalmente gratuito y de código abierto. Esto significa que se puede utilizar para lo que quieras, donde quieras, sin coste y tener acceso a todo el código fuente para, si se desea, mejorar, cambiar o modifical cada uno de los aspectos que queramos, adaptándolo a nuestras necesidades.
+
+
 
 
 
