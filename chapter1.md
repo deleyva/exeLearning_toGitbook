@@ -42,15 +42,15 @@ Para comenzar y si no es el caso que compremos una raspberry pi con el kit de in
 
 ![](/assets/touch screen)\*
 
-
-
 Si exceptuamos esta última, los demás componentes si serán necesarios para montar nuestra aula de informática. A modo de sugerencia, Os imaginais un aula que mediante Wifi tenga los siguientes elementos para nuestros alumnos....
-
-
 
 **Touch screen mas caja \(20€\) + \(Raspberry Pi3 B + Disipadores + Tarjeta SD + Alimentador + HDMI \)\(75 €\) = - de 100€/alumno**
 
+\(precio aproximado\).
 
+
+
+Qué más necesitamos para comenzar.... Pues un equipo de sobremesa que actuará a modo de servidor en nuestra aula. No es necesario que sea muy potente, de hecho cualquiera de los que tenemos en nuestros centros que ya no sirven para las Aulas convencionales puede servir.
 
 
 
