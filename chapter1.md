@@ -6,7 +6,9 @@ Al igual que no necesitamos ser ingenieros de telecomunicaciones para usar un m�
 
 Pues está claro, conociendo físicamente nuestra Raspberry, sus partes y componentes fundamentales y porqué no, los multiples periféricos que le podemos añadir.
 
-# Componentes principales de Raspberry Pi 3\*:
+# A.- HARDWARE:
+
+### Componentes principales de Raspberry Pi 3\*:
 
 ![](/assets/componentes.jpg)
 
@@ -48,9 +50,29 @@ Si exceptuamos esta última, los demás componentes si serán necesarios para mo
 
 \(precio aproximado\).
 
-
-
 Qué más necesitamos para comenzar.... Pues un equipo de sobremesa que actuará a modo de servidor en nuestra aula. No es necesario que sea muy potente, de hecho cualquiera de los que tenemos en nuestros centros que ya no sirven para las Aulas convencionales puede servir.
+
+
+
+
+
+**\*/ Otros accesorios: La propia natulareza del proyecto Raspberry Pi, hace que el número de componentes que podemos añadir a nuestra placa no pare de crecer. Podemos encontrar alguna de los principales en los siguientes enlaces.**
+
+[https://www.raspberryshop.es/accesorios-raspberry-pi.php](https://www.raspberryshop.es/accesorios-raspberry-pi.php)
+
+[https://hipertextual.com/archivo/2014/05/accesorios-raspberry-pi/](https://hipertextual.com/archivo/2014/05/accesorios-raspberry-pi/)
+
+[http://www.raspipc.es/public/home/](http://www.raspipc.es/public/home/)
+
+Hasta cierto punto impresionante ¿no?; Podemos ver miles y miles de proyectos que se han realizado con este mini ordenador, desde consolas retro hasta robots programables. Pero centremonos en nuestro objetivo, pasemos ahora a explicar brevemente el software que necesitaremos.
+
+
+
+
+
+# B.- SOFTWARE:
+
+
 
 
 
