@@ -117,3 +117,11 @@ Que vamos a conseguir con ambos sistemas en funcionamiento:
 
 
 
+## RASPBIAN:
+
+Será el sistema opertivo que tendrán  nuestros alumnos en sus Rapsberry.
+
+
+
+
+
