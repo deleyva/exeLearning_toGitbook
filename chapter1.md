@@ -52,10 +52,6 @@ Si exceptuamos esta última, los demás componentes si serán necesarios para mo
 
 Qué más necesitamos para comenzar.... Pues un equipo de sobremesa que actuará a modo de servidor en nuestra aula. No es necesario que sea muy potente, de hecho cualquiera de los que tenemos en nuestros centros que ya no sirven para las Aulas convencionales puede servir.
 
-
-
-
-
 **\*/ Otros accesorios: La propia natulareza del proyecto Raspberry Pi, hace que el número de componentes que podemos añadir a nuestra placa no pare de crecer. Podemos encontrar alguna de los principales en los siguientes enlaces.**
 
 [https://www.raspberryshop.es/accesorios-raspberry-pi.php](https://www.raspberryshop.es/accesorios-raspberry-pi.php)
@@ -66,13 +62,21 @@ Qué más necesitamos para comenzar.... Pues un equipo de sobremesa que actuará
 
 Hasta cierto punto impresionante ¿no?; Podemos ver miles y miles de proyectos que se han realizado con este mini ordenador, desde consolas retro hasta robots programables. Pero centremonos en nuestro objetivo, pasemos ahora a explicar brevemente el software que necesitaremos.
 
-
-
-
-
 # B.- SOFTWARE:
 
+Recopilemos hasta ahora lo que Necesitamos...
 
+**Hardware necesario**
+
+– Un equipo de sobremesa / portátil de edad para el servidor con un puerto Gigabit Ethernet.  
+– Un conmutador de red \(requiere al menos un solo gigabit o 1000 puerto / 100 / 10mbit para el servidor\).  
+– Un router \(para una red independiente\) o la conexión a la red de escuelas.  
+– Algunos cables Ethernet.  
+– Una Frambuesa Pi y tarjeta SD con un tamaño de al menos 128 MB \(así que sí, 2gb, 4gb, 8gb, etc tarjetas serán también trabajar
+
+
+
+Y ahora pasemos a Recopilar el software que vamos a necesitar, esta parte nos saldrá mucho más barata... de hecho es software gratuito y libre, por lo que solo tiene ventajas.
 
 
 
