@@ -86,20 +86,20 @@ Mi recomendación es la última de las opciones.
 
 Así pues lo primero que necesitaremos será Ubuntu 14.04.
 
+Nosotros realizaremos el curso con ese Sistema operativo, aunque todos los pasos son iguales en la nueva versión de Ubuntu 16.04 LTS, descargable desde: [https://www.ubuntu.com/download](https://www.ubuntu.com/download)
+
 ## **PINET:**
 
 Pinet es un proyecto libre y de código abierto para ayudar a las escuelas establecer y gestionar un aula Raspberry Pi.  
 Se ha desarrollado junto a los maestros con la retroalimentación de más de 15 países de todo el mundo.  
-Sus características clave incluyen :
+Sus características clave incluyen :
 
-*  Red basada cuentas de usuario – \* Cualquier estudiante puede sentarse en cualquier Pi frambuesa e ingrese.
-*  Sistema operativo basado en Red – Boot Toda Raspberry Pis un único sistema operativo Raspbian maestro.
-*  Las carpetas compartidas – Fácil de usar sistema de carpeta compartida para profesores y estudiantes.
-*  Sistema de recogida de Trabajo – colección trabajo simple sistema / submittion que permiten a los estudiantes a entregar en el trabajo.
-*  Las copias de seguridad automatizadas – Copia de seguridad automática de todos los estudiantes trabajan en una unidad externa periódicamente.
-*  Muchos más pequeñas características como la importación de usuarios por lotes, aula de integración de software de gestión, etc.
-
-
+* Red basada cuentas de usuario – \* Cualquier estudiante puede sentarse en cualquier Pi frambuesa e ingrese.
+* Sistema operativo basado en Red – Boot Toda Raspberry Pis un único sistema operativo Raspbian maestro.
+* Las carpetas compartidas – Fácil de usar sistema de carpeta compartida para profesores y estudiantes.
+* Sistema de recogida de Trabajo – colección trabajo simple sistema / submittion que permiten a los estudiantes a entregar en el trabajo.
+* Las copias de seguridad automatizadas – Copia de seguridad automática de todos los estudiantes trabajan en una unidad externa periódicamente.
+* Muchos más pequeñas características como la importación de usuarios por lotes, aula de integración de software de gestión, etc.
 
 Que vamos a conseguir con ambos sistemas en funcionamiento:
 
@@ -113,7 +113,7 @@ Que vamos a conseguir con ambos sistemas en funcionamiento:
 
 **Completamente gratuito: **Pinet es totalmente gratuito y de código abierto. Esto significa que se puede utilizar para lo que quieras, donde quieras, sin coste y tener acceso a todo el código fuente para, si se desea, mejorar, cambiar o modifical cada uno de los aspectos que queramos, adaptándolo a nuestras necesidades.
 
-
+**Uso internacional: **Este tipo de proyectos no son novedad en el mundo, muchos centros educativos de otros tantos países se han lanzado a "construir" este tipo de aulas, por lo que no estaremos solos en nuestra labor, de hecho sería beneficiosa la colaboración entre centros.
 
 
 
