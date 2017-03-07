@@ -44,7 +44,7 @@ Para comenzar y si no es el caso que compremos una raspberry pi con el kit de in
 
 ![](/assets/touch screen)\*
 
-Si exceptuamos esta última, los demás componentes si serán necesarios para montar nuestra aula de informática. A modo de sugerencia, Os imaginais un aula que mediante Wifi tenga los siguientes elementos para nuestros alumnos....
+Si exceptuamos esta última, los demás componentes si serán necesarios para montar nuestra aula de informática. A modo de sugerencia, Os imagináis un aula que mediante Wifi tenga los siguientes elementos para nuestros alumnos....
 
 **Touch screen mas caja \(20€\) + \(Raspberry Pi3 B + Disipadores + Tarjeta SD + Alimentador + HDMI \)\(75 €\) = - de 100€/alumno**
 
@@ -60,33 +60,42 @@ Qué más necesitamos para comenzar.... Pues un equipo de sobremesa que actuará
 
 [http://www.raspipc.es/public/home/](http://www.raspipc.es/public/home/)
 
-Hasta cierto punto impresionante ¿no?; Podemos ver miles y miles de proyectos que se han realizado con este mini ordenador, desde consolas retro hasta robots programables. Pero centremonos en nuestro objetivo, pasemos ahora a explicar brevemente el software que necesitaremos.
+Hasta cierto punto impresionante, ¿no?; Podemos ver miles y miles de proyectos que se han realizado con este mini ordenador, desde _consolas_ _retro_ hasta robots programables. 
 
-# B.- SOFTWARE:
-
-Recopilemos hasta ahora lo que Necesitamos...
+Recopilemos hasta ahora lo que necesitamos...
 
 **Hardware necesario**
 
-– Un equipo de sobremesa / portátil de edad para el servidor con un puerto Gigabit Ethernet.  
-– Un conmutador de red \(requiere al menos un solo gigabit o 1000 puerto / 100 / 10mbit para el servidor\).  
-– Un router \(para una red independiente\) o la conexión a la red de escuelas.  
-– Algunos cables Ethernet.  
-– Una Frambuesa Pi y tarjeta SD con un tamaño de al menos 128 MB \(así que sí, 2gb, 4gb, 8gb, etc tarjetas serán también trabajar
+*  Un equipo de sobremesa / portátil de edad para el servidor con un puerto Gigabit Ethernet.
+*  Un conmutador de red \(requiere al menos un solo gigabit o 1000 puerto / 100 / 10mbit para el servidor\).
+* Un router \(para una red independiente\) o la conexión a la red de escuelas.
+* Algunos cables Ethernet.
+* Una Raspberry Pi y tarjeta SD con un tamaño de al menos 128 MB \(recomendamos una tarjeta superior con al menos 4Gb de capacidad y velocidad de lectura-escritura +10.
+* Tantas pantallas como raspberry queramos conectar. Podemos reaprovechar las de nuestro centro, usar touchscreen \(quizá demasiado pequeñas para que los alumnos tengan una correcta visualización\) o bien comprar pantallas nuevas.
+
+
+
+
 
 Y ahora pasemos a Recopilar el software que vamos a necesitar, esta parte nos saldrá mucho más barata... de hecho es software gratuito y libre, por lo que solo tiene ventajas.
 
-## UBUNTU 14.04
+# B.- SOFTWARE:
+
+
+
+## UBUNTU 16.04
 
 Sistema Operativo Linux.
 
-Para que nuestra aula de informática comience a tomar forma "digital" debemos previamente tomar una decisión, vamos a virtualizar el servidor esto es, Sobre Windows XP o superior vamos a instalar VirtualBox y allí crear una máquina virtual con Ubuntu 14.04 o bien vamos a instalar desde cero en nuestro equipo servidor Ubuntu 14.04.
+Para que nuestra aula de informática comience a tomar forma "digital" debemos previamente tomar una decisión, vamos a virtualizar el servidor esto es, sobre Windows XP o superior vamos a instalar VirtualBox y allí crear una máquina virtual con Ubuntu 16.04 o bien vamos a instalar desde cero en nuestro equipo servidor Ubuntu 16.04
 
 Mi recomendación es la última de las opciones.
 
-Así pues lo primero que necesitaremos será Ubuntu 14.04.
+Así pues lo primero que necesitaremos será Ubuntu 16.04
 
-Nosotros realizaremos el curso con ese Sistema operativo, aunque todos los pasos son iguales en la nueva versión de Ubuntu 16.04 LTS, descargable desde: [https://www.ubuntu.com/download](https://www.ubuntu.com/download)
+Nosotros realizaremos el curso con ese Sistema operativo, eso sí, virtualizando el servicio mediante VirtualBox aunque todos los pasos son iguales que si lo realizásemos en una máquina propia.
+
+La nueva versión de Ubuntu 16.04 LTS, es descargable desde: [https://www.ubuntu.com/download](https://www.ubuntu.com/download)
 
 ## **PINET:**
 
@@ -115,13 +124,7 @@ Que vamos a conseguir con ambos sistemas en funcionamiento:
 
 **Uso internacional: **Este tipo de proyectos no son novedad en el mundo, muchos centros educativos de otros tantos países se han lanzado a "construir" este tipo de aulas, por lo que no estaremos solos en nuestra labor, de hecho sería beneficiosa la colaboración entre centros.
 
-
-
 ## RASPBIAN:
 
-Será el sistema opertivo que tendrán  nuestros alumnos en sus Rapsberry.
-
-
-
-
+Será el sistema operativo que tendrán  nuestros alumnos en sus Rapsberryv Pi.
 
