@@ -7,8 +7,6 @@
 * [Módulo II\_ Instalación de Ubuntu 16](instalacion-de-ubuntu.md)
 * [Módulo III\_ Instalación de PiNet ](modulo-iiiinstalaci-o-n-de-pinet.md)
 * [Módulo IV\_ Instalación del sistema en la Raspberry Pi](modulo-ivinstalaci-o-n-del-sistema-en-la-raspberry-pi.md)
-* Módulo V\_ Creación de usuarios, recursos y materiales compartidos en el sistema.
+* [Módulo V\_ Creación de usuarios. Alumnos y Profesores](modulo-vcreaci-o-n-de-usuarios-recursos-y-materiales-compartidos-en-el-sistema.md)
 * Módulo VI\_ Instalación de un nuevo programa: “ Epoptes”.
-* Módulo VII\_ Otras opciones del Menú.
-* Módulo VIII \(Epílogo\)\_ Software educativo incluído en la Raspberry Pi.
 
