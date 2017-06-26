@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Introducción](README.md)
 * [¿Tiene sentido tener un aula de informática?](no_te_gastes_mucho_dinero.md)
 * [MODULO 0\_ Un poco de Historia](un-poco-de-historia.md)
 * [Modulo I\_ Materiales necesarios: Hardware y software](chapter1.md)
