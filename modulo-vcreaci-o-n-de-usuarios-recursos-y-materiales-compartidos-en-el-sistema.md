@@ -34,8 +34,6 @@ Por orden:
 
 **\* Exportar usuarios: **Configura un .csv que permite guardar los usuarios para una migración hacia un nuevo PiNet.
 
-
-
 **2.- PRACTICAMOS:**
 
 Practicaremos creando un nuevo alumno en nuestro caso FranciscoJ.
@@ -60,15 +58,7 @@ Ya lo tenemos creado
 
 Nos preguntará si queremos añadir otro.
 
-
-
 !!!!!Sencillo verdad¡¡¡¡¡¡ como más aprenderemos será llevándolo a la práctica así que debemos realizar la tarea encomendada para este módulo.
 
-
-
-
-
-
-
-
+\*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MÓDULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.
 

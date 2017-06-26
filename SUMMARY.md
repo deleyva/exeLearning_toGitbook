@@ -8,5 +8,7 @@
 * [Módulo III\_ Instalación de PiNet ](modulo-iiiinstalaci-o-n-de-pinet.md)
 * [Módulo IV\_ Instalación del sistema en la Raspberry Pi](modulo-ivinstalaci-o-n-del-sistema-en-la-raspberry-pi.md)
 * [Módulo V\_ Creación de usuarios. Alumnos y Profesores](modulo-vcreaci-o-n-de-usuarios-recursos-y-materiales-compartidos-en-el-sistema.md)
-* Módulo VI\_ Instalación de un nuevo programa: “ Epoptes”.
+* [Módulo VI\_ Instalación de un nuevo programa: “ Epoptes”.](modulo-viinstalaci-o-n-de-un-nuevo-programa-epoptes.md)
+* Módulo VII\_ Otras opciones del Menú.
+* Módulo VIII\_ Software educativo incluído en la Raspberry Pi.
 
