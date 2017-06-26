@@ -82,8 +82,6 @@ Vemos como podemos:
 
 5.- Añadir un profesor al grupo de profesores \(necesario para compartir\).
 
-
-
 Elegimos la primera de las opciones y nos avisará que estas carpetas estarán accesibles desde todas las Raspberrys Pi; Marcamos que sí e introducimos el nombre de la carpeta compartida \(sin espacios\)
 
 ![](/assets/cas)
@@ -100,7 +98,11 @@ Muestro como verá el alumno el recurso compartido que le aprecera directamente 
 
 ![](/assets/dewq)
 
+Mientras que el profesor lo verá así.
 
+![](/assets/fer)
+
+Os animo a que practiqueis esta parte del curso, comprobando si podemos mediante grupos de usuarios, tener acceso a unos recursos compartidos y no a otros, consiguiendo con ello evitar los problemas de "me han borrado mi trabajo" que todos hemos sufrido alguna vez.
 
 
 
