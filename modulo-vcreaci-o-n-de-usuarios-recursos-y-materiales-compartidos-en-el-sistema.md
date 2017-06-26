@@ -60,5 +60,49 @@ Nos preguntará si queremos añadir otro.
 
 !!!!!Sencillo verdad¡¡¡¡¡¡ como más aprenderemos será llevándolo a la práctica así que debemos realizar la tarea encomendada para este módulo.
 
-\*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MÓDULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.
+**2.- CREACIÓN DE CARPETAS COMPARTIDAS:**
+
+Con PiNet arrancado, iremos a "Shared Folders"
+
+![](/assets/vfds)
+
+Leeremos el Menú:
+
+![](/assets/vdf)
+
+Vemos como podemos:
+
+1.- Crear nuevas carpetas
+
+2.- Borrar carpetas compartidas con anterioridad
+
+3.- Cambiar los permisos; Dar lectura-escritura a los alumnos, solo lectura...
+
+4.- Ver las carpetas compartidas en la actualidad.
+
+5.- Añadir un profesor al grupo de profesores \(necesario para compartir\).
+
+
+
+Elegimos la primera de las opciones y nos avisará que estas carpetas estarán accesibles desde todas las Raspberrys Pi; Marcamos que sí e introducimos el nombre de la carpeta compartida \(sin espacios\)
+
+![](/assets/cas)
+
+Otorgamos permisos a los alumnos, recomiendo leer y escribir, para que también puedan compartir recursos con el profesorado, pero también puede ser buena opción la primera para compartir apuntes, tareas, etc y que no puedan ser eliminados. En definitiva, deberemos adaptar los permisos a nuestros usos particulares de los recursos compartidos.
+
+![](/assets/import.png,,.mmp)
+
+Nos mostrará la ruta al recurso y nos avisa que deberemos reiniciar los terminales para que todos los usuarios las vean.
+
+![](/assets/import.pngñl)
+
+Muestro como verá el alumno el recurso compartido que le aprecera directamente en sus carpetas
+
+![](/assets/dewq)
+
+
+
+
+
+
 
