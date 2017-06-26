@@ -124,3 +124,5 @@ Que vamos a conseguir con ambos sistemas en funcionamiento:
 
 **Uso internacional: **Este tipo de proyectos no son novedad en el mundo, muchos centros educativos de otros tantos países se han lanzado a "construir" este tipo de aulas, por lo que no estaremos solos en nuestra labor, de hecho sería beneficiosa la colaboración entre centros.
 
+\*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MODULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.
+
