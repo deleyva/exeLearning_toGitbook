@@ -38,5 +38,9 @@ Al cabo de unos minutos \(el proceso puede tardar 30 minutos\) podremos ver ya n
 
 ![](/assets/raspbian)
 
+Podemos aprovechar para familiarizarnos con el entorno de escritorio de este sistema operativo e incluso usar alguno de los multiples programas que vienen por defecto instalados y que veremos más adelante.
+
+El curso continúa con la Creación de usuarios \(alumnos\).
+
 
 
