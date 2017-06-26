@@ -18,3 +18,31 @@ Abrimos virtualbox y pulsamos en nueva para agregar la nueva máquina virtual
 
 ![](/assetsmenu1/import.png)
 
+Como vemos le ponemos un nombre a nuestra elección y dejamos el resto de los elementos como nos aparece por defecto, si el ordenador sobre el que se implemente va a estar dedicado sólo a ser servidor del aula, podemos aumentar los parámetros como el tamaño de la memoria virtual o física, **Pulsamos en crear.**
+
+![](/1/import.png)
+
+Configuramos ahora la memoria física \(disco duro\) que subimos al menos a 20.00 GB \(Siempre podremos ampliarla posteriormente conforme más memoria se necesite\). De nuevo **Pulsamos en crear**
+
+![](/2/import.png)
+
+Ya la vemos creada y ahora pasaremos a configurarla, la seleccionamos y pulsamos sobre el botón **Configuración**. Para no alargarnos demasiado en la explicación, comentar que desde este lugar podremos configurar nuestra máquina en todo lo relativo a conexiones de red, inserción de imágenes con software, etc. Ahora vamos a ir un poco más al grano.
+
+Vamos al menú **Almacenamiento** y Pulsamos sobre el disco DVD que aparece vacío para posteriormente pulsar en la otra imagen de la derecha que tiene ese mismo icono.
+
+![](/3/import.png)
+
+Al hacerlo se nos abrirá un menú en el que deberemos de buscar y seleccionar la Imagen .iso que nos acabamos de descargar.
+
+![](/4/import.png)
+
+Una vez seleccionada, veremos como nos aparece debajo del Controlador IDE
+
+![](/assets/5)
+
+Aceptamos y ya no tenemos más que pulsar sobre el botón iniciar para que comience la instalación del sistema operativo.
+
+![](/assets/2)
+
+
+
