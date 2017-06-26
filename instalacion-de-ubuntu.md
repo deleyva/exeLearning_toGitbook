@@ -54,9 +54,39 @@ La instalación comenzará automáticamente y en principio no debería dar probl
 
 ![](/assets/111)
 
-
-
 Seleccionamos el idioma y pulsaremos sobre **Instalar Ubuntu.**
 
 En la siguiente pantalla, y si la red es buena, recomendamos marcar ambas opciones, sino es así, es mejor dejarlo para realizar en tareas posteriores a la instalación.
+
+![](/assets/1111) 
+
+Pulsamos continuar.
+
+En la pantalla del tipo de instalación, dejamos la que nos aparece por defecto que formateará todo el disco duro e instalará el nuevo sistema operativo.
+
+![](/assets/123)
+
+![](/assets/12345)
+
+**!!!!! ES OBVIO QUE ESTA OPCIÓN ELIMINARÁ CUALQUIER RESTO DE NEUSTRO ANTERIOR EQUIPO, INCLUÍDOS ARCHIVOS QUE PUDIERAMOS TENER ¡¡¡¡¡**
+
+Pulsamos sobre continuar y sobre instalar ahora.
+
+En las siguientes pantallas es cuestión de elegir las siguientes opciones:
+
+Lugar: Madrid; Teclado: Español
+
+Nombre de usuario y contraseña.
+
+Nombre de equipo y del servidor.
+
+Estas últimas opciones vendran determinadas por las necesidades de cada uno de los Servidores, número de personas que actuarán como admin, etc.
+
+![](/assets/21)
+
+Una vez pulsemos en continuar, comenzará la instalación propiamente dicha por lo que tendremos que esperar \(en función de las capacidades del equipo más o menos tiempo\) mientras tanto siempre podemos observar alguna de las novedades que trae el nuevo sistema operativo.
+
+Finalizado el proceso reiniciamos nuestro equipo que este listo para el siguiente Módulo
+
+![](/assets/4123)
 
