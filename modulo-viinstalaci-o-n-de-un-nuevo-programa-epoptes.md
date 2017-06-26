@@ -50,7 +50,7 @@ Así es como nos muestra la pantalla de uno de nuestros alumnos.
 
 Para finalizar, cabe destacar que EPOPTES ofrece muchas funcionalidades; demostraciones en tiempo real de la realización de alguna tarea, mostar videos en la pantalla de nuestros alumnos, tomar el control de los equipos, bloquear - desbloquear sus pantallas, en definitiva nos permite dar una clase en nuestra aula de informática sin tener que ir equipo por equipo observando y ayudando a nuestro alumnado.
 
-El uso de este programa supera los objetivos de este curso pero aquí os dejo uno de mis manuales favoritos para aprender las principales funcionalidades de este programa.
+El uso de este programa supera los objetivos de este curso pero aquí os dejo uno de mis manuales favoritos para aprender las principales funcionalidades de este programa.Obviamente toda la parte de instalación que marca el tutorial no debemos hacerla puesto que acabamos de realizarla.
 
 [https://lihuen.linti.unlp.edu.ar/index.php/Epoptes](https://lihuen.linti.unlp.edu.ar/index.php/Epoptes)
 
