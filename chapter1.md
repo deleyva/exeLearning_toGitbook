@@ -76,15 +76,15 @@ Recopilemos hasta ahora lo que Necesitamos...
 
 Y ahora pasemos a Recopilar el software que vamos a necesitar, esta parte nos saldrá mucho más barata... de hecho es software gratuito y libre, por lo que solo tiene ventajas.
 
-## UBUNTU 14.04
+## UBUNTU 16.04
 
 Sistema Operativo Linux.
 
-Para que nuestra aula de informática comience a tomar forma "digital" debemos previamente tomar una decisión, vamos a virtualizar el servidor esto es, Sobre Windows XP o superior vamos a instalar VirtualBox y allí crear una máquina virtual con Ubuntu 14.04 o bien vamos a instalar desde cero en nuestro equipo servidor Ubuntu 14.04.
+Para que nuestra aula de informática comience a tomar forma "digital" debemos previamente tomar una decisión, vamos a virtualizar el servidor esto es, Sobre Windows XP o superior vamos a instalar VirtualBox y allí crear una máquina virtual con Ubuntu 16.04 o bien vamos a instalar desde cero en nuestro equipo servidor Ubuntu 16.04.
 
 Mi recomendación es la última de las opciones.
 
-Así pues lo primero que necesitaremos será Ubuntu 14.04.
+Así pues lo primero que necesitaremos será Ubuntu 16.04.
 
 Nosotros realizaremos el curso con ese Sistema operativo, aunque todos los pasos son iguales en la nueva versión de Ubuntu 16.04 LTS, descargable desde: [https://www.ubuntu.com/download](https://www.ubuntu.com/download)
 
@@ -115,13 +115,7 @@ Que vamos a conseguir con ambos sistemas en funcionamiento:
 
 **Uso internacional: **Este tipo de proyectos no son novedad en el mundo, muchos centros educativos de otros tantos países se han lanzado a "construir" este tipo de aulas, por lo que no estaremos solos en nuestra labor, de hecho sería beneficiosa la colaboración entre centros.
 
-
-
 ## RASPBIAN:
 
 Será el sistema opertivo que tendrán  nuestros alumnos en sus Rapsberry.
-
-
-
-
 
