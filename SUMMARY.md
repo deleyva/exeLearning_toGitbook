@@ -10,5 +10,5 @@
 * [Módulo V\_ Creación de usuarios. Creación de Carpetas Compartidas](modulo-vcreaci-o-n-de-usuarios-recursos-y-materiales-compartidos-en-el-sistema.md)
 * [Módulo VI\_ Instalación de un nuevo programa: “ Epoptes”.](modulo-viinstalaci-o-n-de-un-nuevo-programa-epoptes.md)
 * [Módulo VII\_ Otras opciones del Menú.](modulo-viiotras-opciones-del-men-u.md)
-* Módulo VIII\_ Software educativo incluído en la Raspberry Pi.
+* [Módulo VIII\_ Software educativo incluído en la Raspberry Pi.](modulo-viiisoftware-educativo-inclu-i-do-en-la-raspberry-pi.md)
 

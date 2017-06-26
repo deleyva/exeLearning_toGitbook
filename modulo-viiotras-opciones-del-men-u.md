@@ -114,15 +114,11 @@ Es una especie de solucionador de problemas, que mediante una serie de preguntas
 
 ![](/assets/treou)
 
-
-
 **\*/ Other:**
 
- Otro tipo de configuraciones no accesibles desde el menú normal; las vemos:
+Otro tipo de configuraciones no accesibles desde el menú normal; las vemos:
 
 ![](/assets/refer)
-
-
 
 Destacamos por su uso la primera, ya que es la que nos permite “refrescar” el sistema cuando hemos realizado algún cambio significativo en nuestra red.
 
@@ -130,15 +126,11 @@ El resto de opciones no es aconsejable cambiarlas para usuarios no avanzados.
 
 **\*/ Update –Pinet:**
 
- Fuerza el sistema a una total actualización, es recomendable cuando el propio sistema nos avise de que se ha publicado una nueva versión y para solucionar algún fallo de configuración inicial.
+Fuerza el sistema a una total actualización, es recomendable cuando el propio sistema nos avise de que se ha publicado una nueva versión y para solucionar algún fallo de configuración inicial.
 
 
 
-
-
-
-
-
+Y hasta aquí el módulo con más teoría de todo el curso, os invitamos a realizar la evaluación de la Unidad que es muy sencilla.
 
 
 
