@@ -58,7 +58,7 @@ Seleccionamos el idioma y pulsaremos sobre **Instalar Ubuntu.**
 
 En la siguiente pantalla, y si la red es buena, recomendamos marcar ambas opciones, sino es así, es mejor dejarlo para realizar en tareas posteriores a la instalación.
 
-![](/assets/1111) 
+![](/assets/1111)
 
 Pulsamos continuar.
 
@@ -89,4 +89,14 @@ Una vez pulsemos en continuar, comenzará la instalación propiamente dicha por 
 Finalizado el proceso reiniciamos nuestro equipo que este listo para el siguiente Módulo
 
 ![](/assets/4123)
+
+\*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MODULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.
+
+
+
+
+
+
+
+
 
