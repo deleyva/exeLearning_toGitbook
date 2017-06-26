@@ -44,5 +44,19 @@ Aceptamos y ya no tenemos más que pulsar sobre el botón iniciar para que comie
 
 ![](/assets/2)
 
+Configurada ya nuestra VirtualBox, podemos pasar a Instalar el Sistema Operativo.
 
+**2.- INSTALACIÓN DEL SISTEMA OPERATIVO:**
+
+![](/assets/11)
+
+La instalación comenzará automáticamente y en principio no debería dar problemas.
+
+![](/assets/111)
+
+
+
+Seleccionamos el idioma y pulsaremos sobre **Instalar Ubuntu.**
+
+En la siguiente pantalla, y si la red es buena, recomendamos marcar ambas opciones, sino es así, es mejor dejarlo para realizar en tareas posteriores a la instalación.
 
