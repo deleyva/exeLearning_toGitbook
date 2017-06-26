@@ -6,7 +6,7 @@
 * [Modulo I\_ Materiales necesarios: Hardware y software](chapter1.md)
 * [Módulo II\_ Instalación de Ubuntu 16](instalacion-de-ubuntu.md)
 * [Módulo III\_ Instalación de PiNet ](modulo-iiiinstalaci-o-n-de-pinet.md)
-* Módulo IV\_ Instalación del sistema en la Raspberry Pi
+* [Módulo IV\_ Instalación del sistema en la Raspberry Pi](modulo-ivinstalaci-o-n-del-sistema-en-la-raspberry-pi.md)
 * Módulo V\_ Creación de usuarios, recursos y materiales compartidos en el sistema.
 * Módulo VI\_ Instalación de un nuevo programa: “ Epoptes”.
 * Módulo VII\_ Otras opciones del Menú.
