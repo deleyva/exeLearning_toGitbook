@@ -42,5 +42,5 @@ Podemos aprovechar para familiarizarnos con el entorno de escritorio de este sis
 
 El curso continúa con la Creación de usuarios \(alumnos\).
 
-\*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MÓDULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.
+**\*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MÓDULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.**
 

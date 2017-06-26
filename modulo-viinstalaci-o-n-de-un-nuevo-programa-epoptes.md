@@ -6,9 +6,9 @@ Arrancamos pinet:7
 
 ![](/assets/arranca)
 
-Vamos a _Install - Program _de nuestro Menú
+Vamos a \_Install - Program \_de nuestro Menú
 
-![](/assets/install)  
+![](/assets/install)
 
 Aceptamos el mensaje de confirmación.
 
@@ -52,7 +52,7 @@ Para finalizar, cabe destacar que EPOPTES ofrece muchas funcionalidades; demostr
 
 El uso de este programa supera los objetivos de este curso pero aquí os dejo uno de mis manuales favoritos para aprender las principales funcionalidades de este programa.
 
-
-
 [https://lihuen.linti.unlp.edu.ar/index.php/Epoptes](https://lihuen.linti.unlp.edu.ar/index.php/Epoptes)
+
+**\*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MÓDULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.**
 
