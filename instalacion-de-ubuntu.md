@@ -48,7 +48,7 @@ Configurada ya nuestra VirtualBox, podemos pasar a Instalar el Sistema Operativo
 
 **2.- INSTALACIÓN DEL SISTEMA OPERATIVO:**
 
-![](/assets/11)
+![](/assets/ubupral)
 
 La instalación comenzará automáticamente y en principio no debería dar problemas.
 
@@ -91,12 +91,4 @@ Finalizado el proceso reiniciamos nuestro equipo que este listo para el siguient
 ![](/assets/4123)
 
 \*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MODULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.
-
-
-
-
-
-
-
-
 
