@@ -6,7 +6,7 @@ En este módulo, pretendemos explicar aquellas partes del Menú de configuració
 
 Arrancamos PiNet y vamos a detallar cada uno de las opciones del menú.
 
-![](/assets/sdf)
+![](/assets/sdf.png)
 
 **\*/ System - Status:**
 
@@ -28,7 +28,7 @@ Miembros del grupo Teachers
 
 Usuarios activos en el momento.
 
-![](/assets/satus)
+![](/assets/satus.png)
 
 Pulsamos Enter y Volvemos al Menú principal.
 
@@ -36,7 +36,7 @@ Pulsamos Enter y Volvemos al Menú principal.
 
 Ya hemos hablado de él en el módulo anterior e igual que instalamos epoptes, podemos instalar el resto de programas de la lista.
 
-![](/assets/list)
+![](/assets/list.png)
 
 Brevemente:
 
@@ -70,9 +70,9 @@ Como cada vez que cambiamos algo, nos comprimirá la imagen del sistema.
 
 Cuando finalice nos aparecerá un mensaje como este:
 
-![](/assets/import.pngdvs)
+![](/assets/import4.png)
 
-![](/assets/msj)
+![](/assets/msj.png)
 
 **Nota: **
 
@@ -90,9 +90,9 @@ También estudiadas en módulos anteriores.
 
 Permite recopilar trabajos de nuestros alumnos al momento es una sola carpeta, con lo que facilita mucho la tarea de recuperar todas las tareas que queramos “recoger” de nuestros alumnos. Solamente debemos entrar y poner el nombre del usuario que va a "recoger" los trabajos, aceptaremos el mensaje de aviso y veremos en la carpeta del profesor, una carpeta por alumno con el contenido coleecionado.
 
-![](/assets/import.pngdfsafasdf)
+![](/assets/import5.png)
 
-![](/assets/sdasdz)
+![](/assets/sdasdz.png)
 
 **\*/ Update – SD:**
 
@@ -102,7 +102,7 @@ Actualiza la imagen de Piboot para nuestras raspberrys, eso es necesario cuando 
 
 Reconstruye el servidor LTSP de Linux soporte de Pinet. No es una opción muy utilizada ya que supone casi el completo formateo de Raspbian del servidor. Los archivos de los alumnos no deberían de ser afectados, pero si alguno de los programas.
 
-![](/assets/rebu)
+![](/assets/rebu.png)
 
 **\*/ Epoptes – menú:**
 
@@ -112,13 +112,13 @@ Visto en tareas anteriores arranca el programa epoptes.
 
 Es una especie de solucionador de problemas, que mediante una serie de preguntas nos puede ayudar a resolver algún pequeño problema de configuración que tuvieramos, con todo, nos acaba mandando a la página oficial de Pinet.
 
-![](/assets/treou)
+![](/assets/treou.png)
 
 **\*/ Other:**
 
 Otro tipo de configuraciones no accesibles desde el menú normal; las vemos:
 
-![](/assets/refer)
+![](/assets/refer.png)
 
 Destacamos por su uso la primera, ya que es la que nos permite “refrescar” el sistema cuando hemos realizado algún cambio significativo en nuestra red.
 
