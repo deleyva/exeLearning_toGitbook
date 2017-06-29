@@ -1,4 +1,4 @@
-# MÓDULO VIII: Software educativo incluído en la Raspberry Pi.
+# 8. Software educativo incluído en la Raspberry Pi
 
 Este módulo concluye el curso a modo de Epílogo, comentando alguna de las características, funciones y usos de los programas que podremos utilizar con nuestros alumnos en sus Raspberry´s, Realizar tareas con ellos es bastante sencillo y motivador para los alumnos. Esperamos que os gusten y os animéis a utilizarlas.
 

@@ -1,4 +1,4 @@
-# MÓDULO VI: Instalación de un nuevo programa; "EPOPTES".
+# 6. Instalación de un nuevo programa; "EPOPTES"
 
 Nuestro Raspbian ya viene con bastantes programas listos para trabajar \(posteriormente en otro capítulo los trataremos más en detalle\), pero no así nuestro servidor, al que podremos instalar directamente desde Pinet algunos programas tan interesantes como el que os presentamos a continuación: EPOPTES.
 

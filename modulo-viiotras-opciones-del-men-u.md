@@ -1,4 +1,4 @@
-# MÓDULO VII: Otras Opciones del Menú.
+# 7. Otras Opciones del Menú
 
 Comenzamos la última de las secciones en las que se divide el presente curso, esperamos quehasta ahora vaya todo bien y os este gustando el proyecto.
 

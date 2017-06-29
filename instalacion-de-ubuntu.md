@@ -1,4 +1,4 @@
-# Instalación del Sistema Operativo en el equipo servidor:
+# 2. Instalación del Sistema Operativo en el equipo servidor
 
 **INSTALACIÓN UBUNTU 16.04**
 

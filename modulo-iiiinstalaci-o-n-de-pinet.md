@@ -1,4 +1,4 @@
-# MODULO III: Instalación de PiNet
+# 3. Instalación de PiNet
 
 _**\*\(NOTA DEL AUTOR\): Recomiendo realizar todo el módulo sin entrar como root en nuestro servidor Ubuntu, ya que podríamos tener problemas con los permisos de las carpetas que crea PiNet al iniciar.**_
 

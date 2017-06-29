@@ -1,4 +1,4 @@
-# MÓDULO IV: Instalación del Sistema en la Rapsberry Pi.
+# 4. Instalación del Sistema en la Rapsberry Pi.
 
 Si todo ha ido bien hasta ahora, y confiamos en que sí, ya tenemos preparado nuestro Servidor y podemos pasar a copiar los archivos necesarios en las tarjetas de memoria SD y proceder a unir nuestras Raspberry Pi.
 
