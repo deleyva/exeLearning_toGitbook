@@ -6,11 +6,11 @@ Cuando tengamos que crear nuevos usuarios lo realizaremos también desde el prop
 
 Arrancamos PiNEt y vamos a Manage-Users
 
-![](/assets/import.pnghtt)
+![](/assets/import1.png)
 
 Nos aparecerá el siguiente menú:
 
-![](/assets/veas)
+![](/assets/veas.png)
 
 Que por orden nos permitirá:
 
@@ -42,19 +42,19 @@ Vamos al menú explicado anteriormente y pulsamos sobre Añadir nuevos usuarios.
 
 Introducimos su nombre
 
-![](/assets/y6)
+![](/assets/y6.png)
 
 A la par ponemos una contraseña
 
-![](/assets/bvccx)
+![](/assets/bvccx.png)
 
 Lo señalamos ahora como pupilo \(alumno\) o profesor
 
-![](/assets/cvdfe4rt)
+![](/assets/cvdfe4rt.png)
 
 Ya lo tenemos creado
 
-![](/assets/fin)
+![](/assets/fin.png)
 
 Nos preguntará si queremos añadir otro.
 
@@ -64,11 +64,11 @@ Nos preguntará si queremos añadir otro.
 
 Con PiNet arrancado, iremos a "Shared Folders"
 
-![](/assets/vfds)
+![](/assets/vfds.png)
 
 Leeremos el Menú:
 
-![](/assets/vdf)
+![](/assets/vdf.png)
 
 Vemos como podemos:
 
@@ -84,23 +84,23 @@ Vemos como podemos:
 
 Elegimos la primera de las opciones y nos avisará que estas carpetas estarán accesibles desde todas las Raspberrys Pi; Marcamos que sí e introducimos el nombre de la carpeta compartida \(sin espacios\)
 
-![](/assets/cas)
+![](/assets/cas.png)
 
 Otorgamos permisos a los alumnos, recomiendo leer y escribir, para que también puedan compartir recursos con el profesorado, pero también puede ser buena opción la primera para compartir apuntes, tareas, etc y que no puedan ser eliminados. En definitiva, deberemos adaptar los permisos a nuestros usos particulares de los recursos compartidos.
 
-![](/assets/import.png,,.mmp)
+![](/assets/import2.png)
 
 Nos mostrará la ruta al recurso y nos avisa que deberemos reiniciar los terminales para que todos los usuarios las vean.
 
-![](/assets/import.pngñl)
+![](/assets/import3.png)
 
 Muestro como verá el alumno el recurso compartido que le aprecera directamente en sus carpetas
 
-![](/assets/dewq)
+![](/assets/dewq.png)
 
 Mientras que el profesor lo verá así.
 
-![](/assets/fer)
+![](/assets/fer.png)
 
 Os animo a que practiqueis esta parte del curso, comprobando si podemos mediante grupos de usuarios, tener acceso a unos recursos compartidos y no a otros, consiguiendo con ello evitar los problemas de "me han borrado mi trabajo" que todos hemos sufrido alguna vez.
 
