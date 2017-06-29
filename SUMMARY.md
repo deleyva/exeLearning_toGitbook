@@ -11,4 +11,5 @@
 * [6. Instalación de un nuevo programa: “ Epoptes”](modulo-viinstalaci-o-n-de-un-nuevo-programa-epoptes.md)
 * [7. Otras opciones del Menú.](modulo-viiotras-opciones-del-men-u.md)
 * [8. Software educativo incluído en la Raspberry Pi](modulo-viiisoftware-educativo-inclu-i-do-en-la-raspberry-pi.md)
+* [Créditos](creditos.md)
 
