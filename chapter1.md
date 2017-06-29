@@ -42,7 +42,7 @@ Para comenzar y si no es el caso que compremos una raspberry pi con el kit de in
 
 **\*/ Touch Screen LCD:** Si la economía de nuestro centro nos lo permite, una buena solución que compagina los dispositivos de entrada y que resultará tremendamente cómodo y atractivo para nuestros alumnos es sin duda la "Touch screen" propia de Raspberry Pi. Compagina teclado y ratón y aunque ocupará dos conexiones de nuestra placa, a largo plazo sale rentable. Su precio va desde los 33 € a los 110 €.
 
-![](/assets/touch screen)\*
+![](/assets/touch screen.jpg)\*
 
 Si exceptuamos esta última, los demás componentes si serán necesarios para montar nuestra aula de informática. A modo de sugerencia, Os imagináis un aula que mediante Wifi tenga los siguientes elementos para nuestros alumnos....
 
