@@ -38,35 +38,35 @@ Al hacerlo se nos abrirá un menú en el que deberemos de buscar y seleccionar l
 
 Una vez seleccionada, veremos como nos aparece debajo del Controlador IDE
 
-![](/assets/5)
+![](/assets/5.png)
 
 Aceptamos y ya no tenemos más que pulsar sobre el botón iniciar para que comience la instalación del sistema operativo.
 
-![](/assets/2)
+![](/assets/2.png)
 
 Configurada ya nuestra VirtualBox, podemos pasar a Instalar el Sistema Operativo.
 
 **2.- INSTALACIÓN DEL SISTEMA OPERATIVO:**
 
-![](/assets/ubupral)
+![](/assets/ubupral.png)
 
 La instalación comenzará automáticamente y en principio no debería dar problemas.
 
-![](/assets/111)
+![](/assets/111.png)
 
 Seleccionamos el idioma y pulsaremos sobre **Instalar Ubuntu.**
 
 En la siguiente pantalla, y si la red es buena, recomendamos marcar ambas opciones, sino es así, es mejor dejarlo para realizar en tareas posteriores a la instalación.
 
-![](/assets/1111)
+![](/assets/1111.png)
 
 Pulsamos continuar.
 
 En la pantalla del tipo de instalación, dejamos la que nos aparece por defecto que formateará todo el disco duro e instalará el nuevo sistema operativo.
 
-![](/assets/123)
+![](/assets/123.png)
 
-![](/assets/12345)
+![](/assets/12345.png)
 
 **!!!!! ES OBVIO QUE ESTA OPCIÓN ELIMINARÁ CUALQUIER RESTO DE NEUSTRO ANTERIOR EQUIPO, INCLUÍDOS ARCHIVOS QUE PUDIERAMOS TENER ¡¡¡¡¡**
 
@@ -82,13 +82,12 @@ Nombre de equipo y del servidor.
 
 Estas últimas opciones vendran determinadas por las necesidades de cada uno de los Servidores, número de personas que actuarán como admin, etc.
 
-![](/assets/21)
+![](/assets/21.png)
 
 Una vez pulsemos en continuar, comenzará la instalación propiamente dicha por lo que tendremos que esperar \(en función de las capacidades del equipo más o menos tiempo\) mientras tanto siempre podemos observar alguna de las novedades que trae el nuevo sistema operativo.
 
 Finalizado el proceso reiniciamos nuestro equipo que este listo para el siguiente Módulo
 
-![](/assets/4123)
+![](/assets/4123.png)
 
 \*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MODULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.
-
