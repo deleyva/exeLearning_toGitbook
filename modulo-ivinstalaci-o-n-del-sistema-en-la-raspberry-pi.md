@@ -10,9 +10,9 @@ Deberemos formatear nuestra tarjeta SD \(en formato FAT32\) para evitar errores.
 
 Su uso es extremadamente sencillo, se inserta la tarjeta y nos aseguramos que la etiqueta del volumen \(la letra\) es la correcta en Drive,le ponemos nombre a la unidad \(Volume Label\) y pulsamos en **Format** y listo.
 
-![](/assets/g)
+![](/assets/g.png)
 
-![](/assets/l)
+![](/assets/l.png)
 
 Si lo hacemos desde el propio Ubuntu u otro sistema Linux, podemos usar GParted que instalaremos mediante el comando:
 
@@ -26,17 +26,17 @@ Para el resto de los pasos mediante este sistema, os enlazamos el siguiente tuto
 
 Para ello vamos  en nuestro servidor Ubuntu a la carpeta piBoot \(Carpeta personal PiBoot\), seleccionamos todos los archivos y los pegamos en la tarjeta SD.
 
-![](/assets/mn)
+![](/assets/mn.png)
 
 Ahora tan sólo deberemos insertar la SD en nuestra Raspberry Pi y encenderla \(mediante el cable de alimentación y todos los cables de periféricos y red conectados\).
 
 Si todo ha ido bien, conezará la instalación \(es posible que de algún problema de "error de entorno de escritorio" que no deberemos tener muy en cuenta, ya que sólo pasará con usuarios creados en el servidor, no pasará cuando tengamos alumnos creados\).
 
-![](/assets/nhf)
+![](/assets/nhf.png)
 
 Al cabo de unos minutos \(el proceso puede tardar 30 minutos\) podremos ver ya nuestra pantalla de Inicio de Raspbian.
 
-![](/assets/raspbian)
+![](/assets/raspbian.png)
 
 Podemos aprovechar para familiarizarnos con el entorno de escritorio de este sistema operativo e incluso usar alguno de los multiples programas que vienen por defecto instalados y que veremos más adelante.
 
