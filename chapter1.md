@@ -103,13 +103,6 @@ Pinet es un proyecto libre y de código abierto para ayudar a las escuelas estab
 Se ha desarrollado junto a los maestros con la retroalimentación de más de 15 países de todo el mundo.  
 Sus características clave incluyen :
 
-* Red basada cuentas de usuario – \* Cualquier estudiante puede sentarse en cualquier Pi frambuesa e ingrese.
-* Sistema operativo basado en Red – Boot Toda Raspberry Pis un único sistema operativo Raspbian maestro.
-* Las carpetas compartidas – Fácil de usar sistema de carpeta compartida para profesores y estudiantes.
-* Sistema de recogida de Trabajo – colección trabajo simple sistema / submittion que permiten a los estudiantes a entregar en el trabajo.
-* Las copias de seguridad automatizadas – Copia de seguridad automática de todos los estudiantes trabajan en una unidad externa periódicamente.
-* Muchos más pequeñas características como la importación de usuarios por lotes, aula de integración de software de gestión, etc.
-
 Que vamos a conseguir con ambos sistemas en funcionamiento:
 
 **Las cuentas de usuario de red** : Las cuentas de los estudiantes de usuario se almacenan en el servidor central Pinet. Esto significa que pueden conectarse desde cualquier Raspberry Pi en el aula y no se pierde tiempo averiguando qué tarjeta SD pertenece a cada estudiante, o dicho de otra forma, las Raspberry Pi son intercambiables entre el alumnado.
