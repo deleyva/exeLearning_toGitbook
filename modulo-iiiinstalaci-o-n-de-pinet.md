@@ -72,3 +72,28 @@ Al aceptar nos arranca directamente el programa, aunque recomendamos quitarlo pa
 
 \*/ TODAS LAS IMÁGENES UTILIZADAS EN EL PRESENTE MÓDULO HAN SIDO ELABORADAS POR EL AUTOR DEL CURSO.
 
+### Posibles problemas durante la instalación, por Ricardo Fuster Andújar
+
+> Varios compañeros, entre los cuales me encuentro, reportamos hace días en el foro un problema que surgía a la hora de instalar PiNet en la Raspberry Pi, consistente en que, una vez instalado PiNet en Ubuntu y pasados los ficheros de la carpera Piboot a la SD card, se producía el siguiente fallo: 
+>
+> **/bin/sh: can't access tty; job control turned off \(intransfer\)**
+>
+> En la sección de "Dudas" del foro hay una entrada que incluye una captura de pantalla. Tras indagar todo el día de ayer en internet he conseguido solucionar el problema, al menos el que me afectaba a mi, por que según he podido leer el comando /bin/sh: can't access tty; job control turned off \(intransfer\) no se refiere a un único problema, sino que alude a varios. Por lo tanto, es posible que la solución que aquí expongo no sirva para todos aquellos afectados por esta situación.  
+>   
+> En mi caso, el problema estaba en la dirección IP establecida en el archivo cmdline.txt. Este archivo se genera durante la instalación de Pinet, queda alojado en la carpeta Piboot y es uno de los que debemos copiar en la SD card para iniciar Pinet en la raspberry. Una vez copiados todos los archivo de Piboot en la tarjeta SD, abrimos cmdline.txt con el editor de texto \(abrimos el archivo que hemos copiado en la SD, no el que está en la carpeta Piboot de Ubuntu\). Veremos lo siguiente:  
+>   
+> **dwc\_otg.lpm\_enable=0 console=serial0,115200 kgdboc=serial0,115200 console=tty1 init=/sbin/init-ltsp nbdroot=:/opt/ltsp/armhf root=/dev/nbd0 elevator=deadline rootwait**  
+>   
+> Después de nbdroot= debería aparecer nuestra dirección IP. Lo que debemos hacer es modificar el fichero manualmente introduciendo nuestra IP. Repito, la modificación debemos realizarla en el archivo cmdline.txt copiado en la SD card \(de hecho, el alojado en Piboot es un archivo solo de lectura y no permite introducir cambios\). Quedará así:  
+>   
+> **dwc\_otg.lpm\_enable=0 console=serial0,115200 kgdboc=serial0,115200 console=tty1 init=/sbin/init-ltsp nbdroot=192.168.1.137:/opt/ltsp/armhf root=/dev/nbd0 elevator=deadline rootwait**  
+>   
+> Por supuesto, la dirección IP que aparece aquí es la mía, de manera que debeís saber cual es la vuestra e introducirla. En ubuntu basta con abrir el terminal y teclear ifconfig. Después introduces la SD card en la raspberry y la enciendes. Si vuestro problema es el mismo debería resolverse. Espero que esta explicación os sirva de ayuda y podáis solucionar el problema.
+
+  
+
+
+
+
+
+
