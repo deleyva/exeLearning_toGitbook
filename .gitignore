@@ -1,0 +1,7 @@
+# ingnoring virtualenv charpet
+/venv
+/venv2
+/exes
+/libros
+test.pyc
+.DS_Store
