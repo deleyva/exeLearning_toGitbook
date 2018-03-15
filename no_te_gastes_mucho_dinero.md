@@ -16,10 +16,9 @@ Puedes llamarlo aula de informática, espacio _Maker_... o como quieras. Se trat
 * Tal vez sea porque fue de la primera en llegar, pero cuenta con **la mayor comunidad entorno a su producto**, si la comparamos con otras como Orange Pi, Banana Pi, Odroid...
 * El **puerto GPIO** nos permite conectar con el mundo físico.
 * Cuenta con sistema operativo basado en Linux y optimizado para este dispositivo \(**Raspbian**\).
-* El **precio** de cada ordenador, si aprovechas teclado y pantalla, puede ser de **76 €**, que incluirían:
-  * Raspberry 3 modelo B, carcasa, alimentación oficial y tarjeta clase 10 de 16 GB \(70 € aprox\).
+* El **precio** de cada ordenador, si aprovechas teclado y pantalla, puede ser de **56 €**, que incluirían:
+  * Raspberry 3 modelo B, carcasa, alimentación oficial y tarjeta clase 10 de 16 GB (*[desde 50 € aprox](https://es.aliexpress.com/)*).
   * Adaptador VGA - HDMI, si tus monitores no tienen entrada HDMI \(6 € aprox\).
-    Si tienes todos estos compomentes, excepto la Raspberry, o en el futuro sacan otro modelo... Solo tendrás que comprar el último dispositivo, que actualmente cuesta 40 € aprox. Pero bueno, aquí ya entramos en el terreno de los futuribles, la verdad.
 
 ### Hagamos cuentas
 
