@@ -1,37 +1,24 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import urllib
-from BeautifulSoup import *
+import requests
 import os
 import sys
 import re
 import tomd
-import progressbar
-import codecs
 from os.path import basename, splitext
-import pdb
 import fileinput
+import helpers
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-bar = progressbar.ProgressBar(maxval=20, \
-    widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
-
 files_list = list()
 urls = list()
-path_for_books = '/home/jesus/Documentos/libros'
-path_for_archives_created = '/home/jesus/Documentos/exeLearning_toGitbook/libros'
-course_title = raw_input('Introduce el nombre del curso: ')
-repo = raw_input('Introduce el repo de github: ')
+PATH_FOR_BOOKS = str(getcwd()) + '/books_to_push'
+PATH_FOR_ARCHIVES_CREATED = str(getcwd()) + '/books_pushed'
+course_title = input('Introduce el nombre del curso: ')
+repo = input('Introduce el repo de github: ')
 
-num_capitulos = 0
-for root, dirs, files in os.walk(os.getcwd() + '/exes/'):
-    for file in files:
-        if file.endswith('.elp'):
-            num_capitulos = num_capitulos + 1
+num_of_chapters = helpers.number_of_chapters()
 
-for capitulo in range(num_capitulos):
+for capitulo in range(num_of_chapters):
 	url = 'http://aularagon.catedu.es/materialesaularagon2013/exes/Modulo_' + str(capitulo + 1) + '/index.html'
 	url_base = url[:-10]
 	html = urllib.urlopen(url).read()
@@ -43,21 +30,8 @@ for capitulo in range(num_capitulos):
 	title = raw_input('Introduce el nombre del capítulo ' + str(capitulo+1) + ': ' )
 
 	if capitulo == 0:
-		path = str(os.getcwd()) + '/libros/' + course_title
-
-		os.mkdir(path)
-		os.chdir(path)
-
-		os.system('gitbook init')
-		fh_summary = open('SUMMARY.md', 'a')
-		fh_json = open('book.json', 'a')
-		fh_json.write('''{"plugins": ["youtube", "accordion"]}''')
-		fh_gitigonre = open('.gitignore', 'a')
-		fh_gitigonre.write('_book/')
-
-		fh_json.close()
-		fh_gitigonre.close()
-
+		helpers.start_book()
+    fh_summary = open('SUMMARY.md', 'a')
 	fh_summary.write('____\n')
 	fh_summary.write('### ' + title + '\n')
 	index = soup.findAll('div', {'id': 'siteNav'}, True)
@@ -158,37 +132,7 @@ for file in files_list:
 
             if '![' in line:
                 line = '\n' + line + '\n'
-
-            # bar.start()
-            # for i in range(len(line)):
-            #     if i > 1:
-            #         # enciendo negritas normales
-            #         if line[i-2:i+1] == ' **' and negrita == 0:
-            #             negrita = 1
-            #         # apago negritas normales
-            #         elif line[i-2:i+1] == '** ' and negrita == 1:
-            #             negrita = 0
-            #         # enciendo negritas con espacio antes del lineo
-            #         elif line[i-2:i+1] == '** ' and negrita == 0:
-            #             negrita = 1
-            #             line = line[:i-2] + ' ' + line[i-1:]
-            #             line = line[:i-1] + '*' + line[i:]
-            #             line = line[:i] + '*' + line[i+1:]
-            #         # apago negritas con espacio despues del lineo
-            #         elif line[i-2:i+1] == ' **' and negrita == 1:
-            #             negrita = 0
-            #             line = line[:i-2] + '*' + line[i-1:]
-            #             line = line[:i-1] + '*' + line[i:]
-            #             line = line[:i] + ' ' + line[i+1:]
-            #             print(negrita)
-            #         # elimino el espacio antes de un signo de puntuacion
-            #         elif line[i-1:i+1] in malaPuntuacion:
-            #             line = line[:i-1] + '' + line[i:]
-            #             try:
-            #                 line = line[:i] + line[i] + line[i+1:]
-            #             except:
-            #                 pass
-            # bar.finish()
+                
             outfile.write(line)
     infile.close()
     outfile.close()
@@ -199,9 +143,9 @@ pasado_a_repo = 'No'
 while pasado_a_repo != 'Sí':
     	pasado_a_repo = raw_input('¿Has creado el repo en github? ')
 
-os.chdir(path_for_archives_created)
-os.system('mv ' + course_title + ' ' + path_for_books)
-os.chdir(path_for_books + '/' + course_title)
+os.chdir(PATH_FOR_ARCHIVES_CREATED)
+os.system('mv ' + course_title + ' ' + PATH_FOR_BOOKS)
+os.chdir(PATH_FOR_BOOKS + '/' + course_title)
 os.system('gitbook install')
 os.system('git init')
 os.system('git add .')
