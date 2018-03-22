@@ -12,12 +12,12 @@ HTMLS = EXES + '/Modulo_'
 PATH_FOR_BOOKS = str(os.getcwd() + '/books_pushed')
 PATH_FOR_ARCHIVES_CREATED = str(os.getcwd() + '/books_to_push')
 files_list = list()
-folder = 'hojas-de-calculo' #input('Introduce el nombre de la carpeta para guardar el curso: ')
-repo = 'git@github.com:catedu/hojas-de-calculo.git' # input('Introduce el repo de github: ')
+folder = 'exelearning' #input('Introduce el nombre de la carpeta para guardar el curso: ')
+repo = 'git@github.com:catedu/exelearning-y-otras-herramientas.git' # input('Introduce el repo de github: ')
 
-git_ignore_text = 'venv/\nnode_modules'
-book_json_text= ('''{ "plugins": ["youtube", "accordion", "image-captions"], '''
-				'''"pluginsConfig": { "image-captions": { "caption": "Imagen - _CAPTION_" } } }''')
+git_ignore_text = 'venv/\nnode_modules\n_book'
+book_json_text= ('''{ "plugins": ["youtube", "accordion", "image-captions", "styled-blockquotes", "localized-footer"], '''
+				'''"pluginsConfig": { "image-captions": { "caption": "Imagen - _CAPTION_" }, "localized-footer": { "hline": true, "filename": "./FOOTER.md" } } }''')
 elps = []
 
 def number_of_chapters(folder):
