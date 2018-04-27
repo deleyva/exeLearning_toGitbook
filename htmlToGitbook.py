@@ -12,8 +12,8 @@ HTMLS = EXES + '/Modulo_'
 PATH_FOR_BOOKS = str(os.getcwd() + '/books_pushed')
 PATH_FOR_ARCHIVES_CREATED = str(os.getcwd() + '/books_to_push')
 files_list = list()
-folder = 'exelearning' #input('Introduce el nombre de la carpeta para guardar el curso: ')
-repo = 'git@github.com:catedu/exelearning-y-otras-herramientas.git' # input('Introduce el repo de github: ')
+folder = input('Introduce la carpeta en la que guardar el curso: ') #input('Introduce el nombre de la carpeta para guardar el curso: ')
+repo = input('Introduce el repo de github: ')
 
 git_ignore_text = 'venv/\nnode_modules\n_book'
 book_json_text= ('''{ "plugins": ["youtube", "accordion", "image-captions", "styled-blockquotes", "localized-footer"], '''
