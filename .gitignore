@@ -1,8 +1,17 @@
-# ingnoring virtualenv charpet
+# ingnoring virtualenv folder
 /venv
-/venv2
-/exes
-/libros
 test.pyc
 .DS_Store
 .vscode
+__pycache__
+
+# don't include the content of the following folders
+books_to_push/*
+books_pushed/*
+exes/*
+
+
+# keep folders
+!books_to_push/.gitkeep
+!books_pushed/.gitkeep
+!exes/.gitkeep
