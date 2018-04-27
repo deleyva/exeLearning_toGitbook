@@ -10,6 +10,9 @@ books_to_push/*
 books_pushed/*
 exes/*
 
+# ingnoring node packages
+node_modules
+
 
 # keep folders
 !books_to_push/.gitkeep

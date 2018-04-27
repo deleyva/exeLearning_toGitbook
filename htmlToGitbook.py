@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import os
 import sys
 import re
-import tomd
 from os.path import basename, splitext
 import fileinput
 
@@ -78,6 +77,8 @@ for capitulo in range(num_of_chapters):
 	ulNum = 0
 	li = 0
 	uls = str(soup.find(id='siteNav'))
+	webs = {}
+	counter = 0
 
 	for line in uls.splitlines():
 		print(line)
@@ -93,20 +94,17 @@ for capitulo in range(num_of_chapters):
 			line = BeautifulSoup(str(line), 'html.parser')
 			link = line.find('a').get('href')
 			item_title = line.find('a').text
-			markdown_file = link.split('.')[0] + '.md'
+			webs[counter][archive] = link.split('.')[0] + '.md'
 
 			# Comienzo a escribir ficheros md
 			if li == 1 or markdown_file in files_list:
 				markdown_file = link.split('.')[0] + str(capitulo) + '.md'
 
-			fh = open(markdown_file, 'a')
 			file_url = url_base + link
 			with open(file_url, 'r') as file_html:
 				soup_file = BeautifulSoup(file_html, 'html.parser')
-			content = str(soup_file.find(id='main'))
-			mark = tomd.Tomd(content).markdown
-			fh.write(mark)
-			fh.close()
+			webs[counter][htmldivmain] = str(soup_file.find(id='main'))
+			counter = counter + 1
 
 			summary_text = ''
 			if ulNum == 1:
@@ -122,6 +120,13 @@ for capitulo in range(num_of_chapters):
 fh_summary.close()
 files_list.append('README.md')
 files_list.append('SUMMARY.md')
+
+with open('webs.json', 'w') as outfile:
+    json.dump(htmls, outfile)
+	
+os.system('cp /Users/Jesus/Documents/exeLearning_toGitbook/html-to-markdown.js .')
+os.system('node html-to-markdown.js')
+os.system('rm html-to-markdown.js')
 
 replacements = {'í©':'é', '&hellip;':'...', '&Oacute;':'Ó', '&rdquo;':'"', '&ldquo;':'"', '&iquest;':'¿', '&uacute;':'ú', '&ntilde;':'ñ', '&nbsp;':'', 'í¡':'á','í³':'ó','<br />':'', 'Introduction':'Introducción','&aacute;':'á', '&eacute;':'é', '&iacute;':'í', '&oacute;':'ó', '<strong>':'**', '</strong>':'**', 'Ã³':'ó', 'Ã±':'ñ', 'Ã¡':'á', 'Ã©':'é', 'Ã':'í'}
 
