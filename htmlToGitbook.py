@@ -59,8 +59,9 @@ for capitulo in range(num_of_chapters):
 		os.chdir(path)
 		os.mkdir(path + '/img')
 		os.system('gitbook init')
-		with open('book.json', 'w') as book_json:
-			book_json.write(book_json_text)
+		os.system('cp ../../book.json .')
+		os.system('cp ../../FOOTER.md .')
+		os.system('cp ../../crditos-buenos.md .')
 
 		with open('.gitignore', 'w') as fh_gitigonre:
 			fh_gitigonre.write(git_ignore_text)
@@ -145,6 +146,7 @@ with open('webs.json', 'w') as outfile:
 os.system('cp ../../html-to-markdown.js .')
 os.system('node html-to-markdown.js')
 os.system('rm html-to-markdown.js')
+os.system('rm webs.json')
 
 replacements = {'í©':'é', '&hellip;':'...', '&Oacute;':'Ó', '&rdquo;':'"', '&ldquo;':'"', '&iquest;':'¿', '&uacute;':'ú', '&ntilde;':'ñ', '&nbsp;':'', 'í¡':'á','í³':'ó','<br />':'', 'Introduction':'Introducción','&aacute;':'á', '&eacute;':'é', '&iacute;':'í', '&oacute;':'ó', '<strong>':'**', '</strong>':'**', 'Ã³':'ó', 'Ã±':'ñ', 'Ã¡':'á', 'Ã©':'é', 'Ã':'í'}
 
@@ -161,13 +163,13 @@ for file in files_list:
 				for src, target in replacements.items():
 					line = line.replace(src, target)
 			
-			if 'youtube.com/embed/' in line:
-				youtubeString = re.findall(r'(www\.youtube\.com/embed/\S*)"', line)
-				youtubeStringStringed = youtubeString[0]
-				youtubeStringFixed = 'https//' + youtubeStringStringed
-				youtubeStringFixed = re.sub(r'embed/', 'watch?v=', youtubeStringFixed)
-				wholeLine = '{% youtube %}' + youtubeStringFixed + '{% endyoutube %}'
-				line = '\n' + wholeLine + '\n'
+			# if 'youtube.com/embed/' in line:
+			# 	youtubeString = re.findall(r'(www\.youtube\.com/embed/\S*)"', line)
+			# 	youtubeStringStringed = youtubeString[0]
+			# 	youtubeStringFixed = 'https//' + youtubeStringStringed
+			# 	youtubeStringFixed = re.sub(r'embed/', 'watch?v=', youtubeStringFixed)
+			# 	wholeLine = '{% youtube %}' + youtubeStringFixed + '{% endyoutube %}'
+			# 	line = '\n' + wholeLine + '\n'
 			
 			if line.startswith('Obra publicada con'):
 				line = line.replace(line, '')
