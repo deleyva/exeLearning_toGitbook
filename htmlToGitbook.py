@@ -4,6 +4,7 @@ import sys
 import re
 from os.path import basename, splitext
 import fileinput
+import json
 
 
 EXES = str(os.getcwd() + '/exes')
@@ -37,6 +38,9 @@ def generate_html():
 num_of_chapters = number_of_chapters(EXES)
 generate_html()
 
+webs = {}
+counter = 0
+
 for capitulo in range(num_of_chapters):
 	url = HTMLS + str(capitulo + 1) + '/index.html'
 	url_base = url[:-10]
@@ -69,16 +73,26 @@ for capitulo in range(num_of_chapters):
 	os.system('cp ' + HTMLS + str(capitulo + 1) + '/*.png img')
 	os.system('cp ' + HTMLS + str(capitulo + 1) + '/*.JPG img')
 	os.system('cp ' + HTMLS + str(capitulo + 1) + '/*.gif img')
-	os.system('rm img/icon_*')
-	os.system('rm img/Icon_*')
-	os.system('rm img/_style_*')
-	os.system('rm img/exe_*')	
+	try:
+		os.system('rm img/icon_*')
+	except Exception:
+		pass
+	try:
+		os.system('rm img/Icon_*')
+	except Exception:
+		pass
+	try:
+		os.system('rm img/_style_*')
+	except Exception:
+		pass
+	try:
+		os.system('rm img/exe_*')
+	except Exception:
+		pass
 
 	ulNum = 0
 	li = 0
 	uls = str(soup.find(id='siteNav'))
-	webs = {}
-	counter = 0
 
 	for line in uls.splitlines():
 		print(line)
@@ -90,20 +104,24 @@ for capitulo in range(num_of_chapters):
 			ulNum = ulNum -1
 
 		if line.startswith('<li'):
+			page = {}
 			li = li + 1
 			line = BeautifulSoup(str(line), 'html.parser')
 			link = line.find('a').get('href')
 			item_title = line.find('a').text
-			webs[counter][archive] = link.split('.')[0] + '.md'
+			markdown_file = link.split('.')[0] + '.md'
 
 			# Comienzo a escribir ficheros md
 			if li == 1 or markdown_file in files_list:
 				markdown_file = link.split('.')[0] + str(capitulo) + '.md'
+				
+			page['archive'] = markdown_file
 
 			file_url = url_base + link
 			with open(file_url, 'r') as file_html:
 				soup_file = BeautifulSoup(file_html, 'html.parser')
-			webs[counter][htmldivmain] = str(soup_file.find(id='main'))
+			page['html'] = str(soup_file.find(id='main'))
+			webs[counter] = page
 			counter = counter + 1
 
 			summary_text = ''
@@ -122,9 +140,9 @@ files_list.append('README.md')
 files_list.append('SUMMARY.md')
 
 with open('webs.json', 'w') as outfile:
-    json.dump(htmls, outfile)
+    json.dump(webs, outfile)
 	
-os.system('cp /Users/Jesus/Documents/exeLearning_toGitbook/html-to-markdown.js .')
+os.system('cp ../../html-to-markdown.js .')
 os.system('node html-to-markdown.js')
 os.system('rm html-to-markdown.js')
 
@@ -137,20 +155,8 @@ for file in files_list:
 		negrita = 0
 		malaPuntuacion = [' !', ' .', ' ,', ' ?', ' \"', ' ']
 		for line in infile:			
-			if '<img' in line and 'http' not in line:
-				imgTag = BeautifulSoup(line, 'html.parser')
-				img = imgTag.find('img')
-				img['src'] = 'img/' + img['src']
-				line = str(imgTag)
-				lineString = re.findall(r'(img/\S*)"', line)
-				lineStringStringed = lineString[0]
-				wholeLine = '![](' + lineStringStringed + ')'
-				line = wholeLine
-			elif '<img' in line and 'http' in line:
-				lineString = re.findall(r'src="(\S*)"', line)
-				lineStringStringed = lineString[0]
-				wholeLine = '![](' + lineStringStringed + ')'
-				line = wholeLine
+			if '![' in line:
+				line = re.sub(r'(?!\[.*)\]\((?!http)', '](img/', line)
 			else:
 				for src, target in replacements.items():
 					line = line.replace(src, target)
