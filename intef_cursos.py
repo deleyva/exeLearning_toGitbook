@@ -6,6 +6,7 @@ import os
 from os.path import basename, splitext
 import fileinput
 import json
+from io import open as iopen
 
 PATH_FOR_BOOKS = str(os.getcwd() + '/books_pushed')
 PATH_FOR_ARCHIVES_CREATED = str(os.getcwd() + '/books_to_push')
@@ -22,9 +23,12 @@ req = requests.get(url)
 soup = BeautifulSoup(req.text, 'html.parser')
 ims = soup.find_all('a')
 chapters = [a['href'] for a in soup.find_all('a', href=True) if str(a['href']).startswith('http://formacion.educalab.es/mod/imscp/')]
+# Para el intef http://formacion.educalab.es/mod/imscp/
+# Para Aularagón http://moodle.catedu.es/mod/imscp/
 
 webs = {}
 counter = 0
+equals = 0
 print(chapters)
 
 for i, capitulo in enumerate(chapters):
@@ -59,8 +63,9 @@ for i, capitulo in enumerate(chapters):
 	uls = soup_capitulo.find('div', {'id': 'imscp_toc'}, True).findAll('a')
 	a_s = 0
 
+
 	for line in lines.prettify().splitlines():
-		print(line)
+		line = str(line).strip()
 		if line.startswith('<ul') and not None:
 			ulNum = ulNum + 1
 
@@ -77,17 +82,37 @@ for i, capitulo in enumerate(chapters):
 			a_s = a_s + 1
 
 			# Comienzo a escribir ficheros md
-			if li == 1 or markdown_file in files_list:
-				markdown_file = link.split('.')[0] + str(capitulo) + '.md'
+			if markdown_file in files_list:
+				markdown_file = markdown_file.split('.')[0] + str(equals) + '.md'
+				equals = equals + 1
 				
 			page['archive'] = markdown_file
 
-			file_url = link
-			with open(file_url, 'r') as file_html:
-				soup_file = BeautifulSoup(file_html, 'html.parser')
+			file_html = requests.get(link)
+			file_html.encoding = 'utf-8'
+			soup_file = BeautifulSoup(file_html.text, 'html.parser')
 			page['html'] = str(soup_file.find(id='main'))
 			webs[counter] = page
 			counter = counter + 1
+
+			# Descargo las imágenes
+			url_base = link.split('/')[0:-1]
+			url_base = '/'.join(url_base)
+			images = soup_file.find_all('img')
+			for x in range(len(images)):
+				source = images[x]['src']
+				if source.startswith('htt'):
+					image_name = source.split('/')[-1]
+					i = requests.get(source)
+					with iopen('img/' + image_name, 'wb') as file:
+						file.write(i.content)
+				elif source != None:
+					image_name = source
+					i = requests.get(url_base + '/' + source)
+					with iopen('img/' + image_name, 'wb') as file:
+						file.write(i.content)
+			
+
 
 			summary_text = ''
 			if ulNum == 1:
@@ -110,6 +135,7 @@ with open('webs.json', 'w') as outfile:
 os.system('cp ../../html-to-markdown.js .')
 os.system('node html-to-markdown.js')
 os.system('rm html-to-markdown.js')
+os.system('rm webs.json')
 
 replacements = {'í©':'é', '&hellip;':'...', '&Oacute;':'Ó', '&rdquo;':'"', '&ldquo;':'"', '&iquest;':'¿', '&uacute;':'ú', '&ntilde;':'ñ', '&nbsp;':'', 'í¡':'á','í³':'ó','<br />':'', 'Introduction':'Introducción','&aacute;':'á', '&eacute;':'é', '&iacute;':'í', '&oacute;':'ó', '<strong>':'**', '</strong>':'**', 'Ã³':'ó', 'Ã±':'ñ', 'Ã¡':'á', 'Ã©':'é', 'Ã':'í'}
 
@@ -159,4 +185,3 @@ os.system('git add .')
 os.system('git commit -m "first commit"')
 os.system('git remote add origin ' + repo)
 os.system('git push -u origin master')
-os.system('rm webs.json')
