@@ -1,0 +1,4 @@
+U1. Todo empieza con un "clic"
+Previo:
+Como ya se ha comentado, para practicar, nos centraremos en el programa StarBoard 9.20 de la marca Hitachi, por ser el modelo más ampliamente instalado por el Departamento de Educación, Cultura y Deporte en los centros aragoneses. Aunque actualmente en la web sólo está accesible la versión StarBoard 9.34 o posteriores, las diferencias no son apreciables y se puede seguir el curso perfectamente con independencia de que trabajes con una u otra versión.
+El software de la pizarra puede instalarse en el ordenador de casa, o en cualquier otro que no esté conectado a una pizarra interactiva, y es operativo en prácticamente todas sus posibilidades. Este hecho permite preparar actividades de aula en casa.
