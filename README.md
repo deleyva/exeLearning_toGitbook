@@ -7,4 +7,7 @@ Hemos pasado por diferentes etapas en estos intentos: montaje de aulas de inform
 El boom de los dispositivos móviles supuso de nuevo un paso de gigante en este camino, sembrando el terreno para que aflorara todo un ecosistema de *Apps* y soluciones basadas en la web. Esto ha hecho que poco a poco las prioridades hayan ido cambiando. Ahora hace falta una mejor conectividad a internet, una fibra potente, con redes preparadas para dar servicio a muchos más dispositivos. Sin embargo, no necesitamos comprarnos un gran ordenador o dispositivo móvil para que nos de un servicio aceptable.
 
 En este entorno cambiante, las soluciones libres tanto en [hardware](https://es.wikipedia.org/wiki/Hardware_libre) como en [software](https://es.wikipedia.org/wiki/Software_libre), ponen a nuestro alcance y de una manera sencilla todo lo que necesitamos para ser ciudadanos de nuestro tiempo.
-<iframe src="https://giphy.com/embed/Ub3NWNmqNomU8" width="426" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/raspberry-Ub3NWNmqNomU8">via GIPHY</a></p>
+
+<iframe src="https://giphy.com/embed/Ub3NWNmqNomU8" width="426" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a ref="https://giphy.com/gifs/raspberry-Ub3NWNmqNomU8">via GIPHY</a></p>
+
+{% include "git+https://github.com/catedu/robotica.git/README.md" %}
