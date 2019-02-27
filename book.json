@@ -1,11 +1,22 @@
 {
-    "plugins": ["youtube", "accordion", "image-captions", "styled-blockquotes", "localized-footer", "quiz"],
+    "plugins": [
+        "youtube",
+        "accordion",
+        "image-captions",
+        "styled-blockquotes",
+        "localized-footer",
+        "edit-link",
+        "githubcontributors"
+    ],
     "language": "es",
     "variables": {
         "title": "______________",
         "author": "______________",
         "collaborators": [
-            { "name": "_________", "edited": "_____________" }
+            {
+                "name": "_________",
+                "edited": "_____________"
+            }
         ]
     },
     "pluginsConfig": {
@@ -16,21 +27,13 @@
             "hline": true,
             "filename": "./FOOTER.md"
         },
-        "quiz": {
-            "labels": {
-                "check": "Comprobar",
-                "showExplanation": "Retroalimentación",
-                "showCorrect": "Mostrar la respuesta correcta",
-                "explanationHeader": "Explicación"
-            },
-            "text": {
-                "noChosen": "Elige al menos una respuesta",
-                "incomplete": "Faltan algunas respuestas correctas"
-            },
-            "buttons": {
-                "showCorrect": true,
-                "showExplanation": true
-            }
+        "edit-link": {
+            "base": "Edita esta página",
+            "label": "Edita esta página"
+        },
+        "githubcontributors": {
+            "githubOwner": "catedu",
+            "githubRepository": "ensena-pensamiento-computacional-con-arduino"
         }
     }
 }
