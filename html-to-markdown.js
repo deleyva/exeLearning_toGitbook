@@ -1,9 +1,10 @@
+var fs = require('fs')
+const fsjson = require('fs-extra')
 var TurndownService = require('turndown')
+
 
 var turndownService = new TurndownService({ headingStyle: 'atx' })
 
-var fs = require('fs')
-const fsjson = require('fs-extra')
 const mydata = fsjson.readJsonSync('./webs.json')
 
 for (i = 0; i < Object.keys(mydata).length; i++) {
