@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+from slugify import slugify
 
 def get_items(url, pattern):
     '''
@@ -14,12 +15,9 @@ def get_items(url, pattern):
     sources = [ancla.get('href') for ancla in anclas if re.search(pattern, ancla.get('href')) is not None]
     return sources
 
-
 def get_moodle_page(url):
     '''
-    TODO Definir el objeto devuelto
     Devuelve un objeto con los siguientes atributos:
-    * is_subchapter: número que definirá el tamaño de la indentación
     * tipo: si es página o libro
     * title: título para el summary
     * archive: nombre del archivo más .md
@@ -29,7 +27,14 @@ def get_moodle_page(url):
 
     Returns: un objeto con los contenidos de la página
     '''
-    pass
+    page = {}
+    page['tipo'] = 'page' if 'mod/page' in url else 'book'
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text, 'html.parser')
+    page['title'] = soup.title.text
+    page['archive'] = slugify(soup.title.text) + '.md'
+    page['html'] = str(soup.find('div', {'role':'main'}))
+    return page
 
 def get_moodle_book_chapters(url):
     '''
@@ -43,17 +48,6 @@ def get_moodle_book_chapters(url):
     anclas = toc.find_all('a')
     sources = [url + '&' + str(ancla.get('href')).split('&')[-1] for ancla in anclas]
     return sources
-
-
-def data_to_json(lista):
-    '''Genera un archivo .json con objetos que tienen cuatro atributos:
-    * is_subchapter: número que definirá el tamaño de la indentación
-    * tipo: si es página o libro
-    * title: título para el summary
-    * archive: nombre del archivo más .md
-    * html: todo el html del contenido de la página
-    '''
-    pass
 
 def summary_generation(jsonfile):
     '''
