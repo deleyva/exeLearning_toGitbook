@@ -6,6 +6,7 @@ from os.path import basename, splitext
 import fileinput
 import json
 
+# find . -name "*elp" -exec mv {} . \;
 
 EXES = str(os.getcwd() + '/exes')
 HTMLS = EXES + '/Modulo_'
