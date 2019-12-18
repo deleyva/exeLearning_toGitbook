@@ -1,0 +1,16 @@
+El repo google_classroom no tiene book.json
+Repository(full_name="catedu/matematicas-tic")
+Repository(full_name="catedu/sintaxis_con_las_tic")
+Repository(full_name="catedu/procedimiento-administrativo")
+Repository(full_name="catedu/curso-de-tutores")
+Repository(full_name="catedu/manual-de-creadores")
+Repository(full_name="catedu/metodologias-activas-didactica-y-evaluacion")
+Repository(full_name="catedu/radio")
+Repository(full_name="catedu/app-inventor-course")
+Repository(full_name="catedu/abies-administrador")
+Repository(full_name="catedu/video-tutoriales")
+Repository(full_name="catedu/ensena-pensamiento-computacional-con-arduino")
+Repository(full_name="catedu/ensena-pensamiento-computacional-con-wego-wedo")
+El repo ensena-pensamiento-computacional-con-wego-wedo no tiene book.json
+El repo ensena-pensamiento-computacional-con-scratch no tiene book.json
+El repo scratch-avanzado-y-makey-makey no tiene book.json
