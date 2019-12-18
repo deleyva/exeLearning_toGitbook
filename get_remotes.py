@@ -7,7 +7,7 @@ from github import Github
 
 
 def download_remotes():
-    g = Github("**********")
+    g = Github("************")
 
     repos = []
 
