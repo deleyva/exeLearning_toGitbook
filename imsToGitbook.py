@@ -19,7 +19,7 @@ def contar_capitulos():
     for root, dirs, files in os.walk(os.getcwd() + '/exes/'):
         for file in files:
             if file.endswith('.html'):
-                x = x + 1
+                x += 1
     return x
 
 files_list = list()

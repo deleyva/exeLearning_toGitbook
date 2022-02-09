@@ -13,10 +13,10 @@ pages = []
 
 # Creo las carpetas y copio los archivos básicos
 folder = get_course_title_folder(main_url)
-path = PATH_FOR_ARCHIVES_CREATED + '/' + folder
+path = f'{PATH_FOR_ARCHIVES_CREATED}/{folder}'
 os.mkdir(path)
 os.chdir(path)
-os.mkdir(path + '/img')
+os.mkdir(f'{path}/img')
 os.system('gitbook init')
 os.system('cp ../../book.json .')
 os.system('cp ../../.gitignore .')

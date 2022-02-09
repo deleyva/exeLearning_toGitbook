@@ -13,7 +13,6 @@ from slugify import slugify
 
 PATH_FOR_BOOKS = str(os.getcwd() + '/books_pushed')
 PATH_FOR_ARCHIVES_CREATED = str(os.getcwd() + '/books_to_push')
-files_list = list()
 folder = input('Introduce la carpeta en la que guardar el curso: ') #input('Introduce el nombre de la carpeta para guardar el curso: ')
 repo = input('Introduce el repo de github: ')
 
@@ -29,18 +28,17 @@ tables = soup.find_all('table', {'class': 'generaltable'})
 pages = {}
 
 for i, table in enumerate(tables):
-	page = {}
-	page['archive'] = slugify(table.find('th').text) + '.md'
+	page = {'archive': slugify(table.find('th').text) + '.md'}
 	page['title'] = table.find('th').text
 	page['html'] = str(table.find_all('tr')[1])
 	page['questions'] = [x.text for x in table.find_all('tr')[3:]]
 	pages[i] = page
 
-path = PATH_FOR_ARCHIVES_CREATED + '/' + folder
+path = f'{PATH_FOR_ARCHIVES_CREATED}/{folder}'
 
 os.mkdir(path)
 os.chdir(path)
-os.mkdir(path + '/img')
+os.mkdir(f'{path}/img')
 os.system('gitbook init')
 os.system('cp ../../book.json .')
 os.system('cp ../../FOOTER.md .')
@@ -50,26 +48,21 @@ with open('.gitignore', 'w') as fh_gitigonre:
 	fh_gitigonre.write(git_ignore_text)
 
 fh_summary = open('SUMMARY.md', 'a')
-fh_questions = open('questions.txt', 'a')
+with open('questions.txt', 'a') as fh_questions:
+	for i in range(len(pages)):
+		summary_text = f'* [{pages[i]["title"]}]({pages[i]["archive"]}' + ')\n'
+		print(summary_text)
+		fh_summary.write(summary_text)
+		print(pages[i]['questions'])
+		print(type(pages[i]['questions']))
+		for question in range(len(pages[i]['questions'])):
+			fh_questions.write(pages[i]['questions'][question])
 
-for i in range(len(pages)):
-	summary_text = '* [' + pages[i]['title'] + ']' + '(' + pages[i]['archive'] + ')\n'
-	print(summary_text)
-	fh_summary.write(summary_text)
-	print(pages[i]['questions'])
-	print(type(pages[i]['questions']))
-	for question in range(len(pages[i]['questions'])):
-		fh_questions.write(pages[i]['questions'][question])
-
-fh_summary.close()
-fh_questions.close()
-files_list.append('README.md')
-files_list.append('SUMMARY.md')
-
-
+	fh_summary.close()
+files_list = ['README.md', 'SUMMARY.md']
 with open('webs.json', 'w') as outfile:
 	json.dump(pages, outfile)
-	
+
 os.system('cp ../../html-to-markdown.js .')
 os.system('node html-to-markdown.js')
 os.system('rm html-to-markdown.js')
@@ -80,11 +73,11 @@ while pasado_a_repo != 'Sí':
 		pasado_a_repo = input('¿Has creado el repo en github? ')
 
 os.chdir(PATH_FOR_ARCHIVES_CREATED)
-os.system('mv ' + folder + ' ' + PATH_FOR_BOOKS)
-os.chdir(PATH_FOR_BOOKS + '/' + folder)
+os.system(f'mv {folder} {PATH_FOR_BOOKS}')
+os.chdir(f'{PATH_FOR_BOOKS}/{folder}')
 os.system('gitbook install')
 os.system('git init')
 os.system('git add .')
 os.system('git commit -m "first commit"')
-os.system('git remote add origin ' + repo)
+os.system(f'git remote add origin {repo}')
 os.system('git push -u origin master')

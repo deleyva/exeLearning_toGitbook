@@ -18,7 +18,7 @@ def update_plugins(path):
             remote = os.popen('git remote -v').read()
             remote_tupple = pattern.findall(remote)[0]
             name = remote_tupple[1][:-4]
-            base = 'https://github.com/catedu/' + name + '/edit/master'
+            base = f'https://github.com/catedu/{name}/edit/master'
             print(name, base)
         except:
             print("XXXXXXXXXXXXXXXXXXXXX")

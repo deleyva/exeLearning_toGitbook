@@ -9,7 +9,7 @@ import json
 # find . -name "*elp" -exec mv {} . \;
 
 EXES = str(os.getcwd() + '/exes')
-HTMLS = EXES + '/Modulo_'
+HTMLS = f'{EXES}/Modulo_'
 PATH_FOR_BOOKS = str(os.getcwd() + '/books_pushed')
 PATH_FOR_ARCHIVES_CREATED = str(os.getcwd() + '/books_to_push')
 files_list = list()
@@ -26,7 +26,7 @@ def number_of_chapters(folder):
 	for root, dirs, files in os.walk(folder):
 		for file in files:
 			if file.endswith('.elp'):
-				num = num + 1
+				num += 1
 				elps.append(file)
 	elps.sort()
 	return num
@@ -34,7 +34,8 @@ def number_of_chapters(folder):
 def generate_html():
 	for i in range(len(elps)):
 		os.system('exe_do -s style=base -w exes/' + elps[i])
-		os.system('exe_do -x website exes/' + elps[i] + ' exes/Modulo_' + str((i+1)) + ' -f')
+		os.system(f'exe_do -x website exes/{elps[i]} exes/Modulo_' + str((i + 1)) +
+		          ' -f')
 
 num_of_chapters = number_of_chapters(EXES)
 generate_html()
@@ -47,18 +48,18 @@ for capitulo in range(num_of_chapters):
 	url_base = url[:-10]
 	soup = None
 
-	
+
 	with open(url, 'r') as file:
 		soup = BeautifulSoup(file, 'html.parser')
-	
+
 	title = soup.title.text
 
 	if capitulo == 0:
-		path = PATH_FOR_ARCHIVES_CREATED + '/' + folder
+		path = f'{PATH_FOR_ARCHIVES_CREATED}/{folder}'
 
 		os.mkdir(path)
 		os.chdir(path)
-		os.mkdir(path + '/img')
+		os.mkdir(f'{path}/img')
 		os.system('gitbook init')
 		os.system('cp ../../book.json .')
 		os.system('cp ../../FOOTER.md .')
@@ -70,11 +71,11 @@ for capitulo in range(num_of_chapters):
 		fh_summary = open('SUMMARY.md', 'a')
 		fh_summary.write('____\n')	
 
-	fh_summary.write('### ' + title + '\n')
-	os.system('cp ' + HTMLS + str(capitulo + 1) + '/*.jpg img')
-	os.system('cp ' + HTMLS + str(capitulo + 1) + '/*.png img')
-	os.system('cp ' + HTMLS + str(capitulo + 1) + '/*.JPG img')
-	os.system('cp ' + HTMLS + str(capitulo + 1) + '/*.gif img')
+	fh_summary.write(f'### {title}' + '\n')
+	os.system(f'cp {HTMLS}' + str(capitulo + 1) + '/*.jpg img')
+	os.system(f'cp {HTMLS}' + str(capitulo + 1) + '/*.png img')
+	os.system(f'cp {HTMLS}' + str(capitulo + 1) + '/*.JPG img')
+	os.system(f'cp {HTMLS}' + str(capitulo + 1) + '/*.gif img')
 	try:
 		os.system('rm img/icon_*')
 	except Exception:
@@ -98,38 +99,36 @@ for capitulo in range(num_of_chapters):
 
 	for line in uls.splitlines():
 		print(line)
-		line = str(line)	
-		if line.startswith('<ul') and not None:
-			ulNum = ulNum + 1
+		line = str(line)
+		if line.startswith('<ul'):
+			ulNum += 1
 
 		if line.startswith('</ul>'):
-			ulNum = ulNum -1
+			ulNum -= 1
 
 		if line.startswith('<li'):
-			page = {}
-			li = li + 1
+			li += 1
 			line = BeautifulSoup(str(line), 'html.parser')
 			link = line.find('a').get('href')
 			item_title = line.find('a').text
-			markdown_file = link.split('.')[0] + '.md'
+			markdown_file = f'{link.split(".")[0]}.md'
 
 			# Comienzo a escribir ficheros md
 			if li == 1 or markdown_file in files_list:
 				markdown_file = link.split('.')[0] + str(capitulo) + '.md'
-				
-			page['archive'] = markdown_file
 
+			page = {'archive': markdown_file}
 			file_url = url_base + link
 			with open(file_url, 'r') as file_html:
 				soup_file = BeautifulSoup(file_html, 'html.parser')
 			page['html'] = str(soup_file.find(id='main'))
 			webs[counter] = page
-			counter = counter + 1
+			counter += 1
 
 			summary_text = ''
 			if ulNum == 1:
-				summary_text = '* [' + item_title + ']' + '(' + markdown_file + ')\n'
-			if ulNum == 2:
+				summary_text = f'* [{item_title}]({markdown_file}' + ')\n'
+			elif ulNum == 2:
 				summary_text = '	* [' + item_title + ']' + '(' + markdown_file + ')\n'
 			if ulNum >= 3:
 				summary_text = '		* [' + item_title + ']' + '(' + markdown_file + ')\n'
@@ -143,7 +142,7 @@ files_list.append('SUMMARY.md')
 
 with open('webs.json', 'w') as outfile:
     json.dump(webs, outfile)
-	
+
 os.system('cp ../../html-to-markdown.js .')
 os.system('node html-to-markdown.js')
 os.system('rm html-to-markdown.js')
@@ -163,7 +162,7 @@ for file in files_list:
 			else:
 				for src, target in replacements.items():
 					line = line.replace(src, target)
-			
+
 			# if 'youtube.com/embed/' in line:
 			# 	youtubeString = re.findall(r'(www\.youtube\.com/embed/\S*)"', line)
 			# 	youtubeStringStringed = youtubeString[0]
@@ -171,13 +170,13 @@ for file in files_list:
 			# 	youtubeStringFixed = re.sub(r'embed/', 'watch?v=', youtubeStringFixed)
 			# 	wholeLine = '{% youtube %}' + youtubeStringFixed + '{% endyoutube %}'
 			# 	line = '\n' + wholeLine + '\n'
-			
+
 			if line.startswith('Obra publicada con'):
 				line = line.replace(line, '')
 
 			if '![' in line:
 				line = '\n' + line + '\n'
-				
+
 			outfile.write(line)
 	infile.close()
 	outfile.close()
@@ -189,11 +188,11 @@ while pasado_a_repo != 'Sí':
 		pasado_a_repo = input('¿Has creado el repo en github? ')
 
 os.chdir(PATH_FOR_ARCHIVES_CREATED)
-os.system('mv ' + folder + ' ' + PATH_FOR_BOOKS)
-os.chdir(PATH_FOR_BOOKS + '/' + folder)
+os.system(f'mv {folder} {PATH_FOR_BOOKS}')
+os.chdir(f'{PATH_FOR_BOOKS}/{folder}')
 os.system('gitbook install')
 os.system('git init')
 os.system('git add .')
 os.system('git commit -m "first commit"')
-os.system('git remote add origin ' + repo)
+os.system(f'git remote add origin {repo}')
 os.system('git push -u origin master')

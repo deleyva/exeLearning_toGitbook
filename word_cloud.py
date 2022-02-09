@@ -27,27 +27,24 @@ def number_of_chapters(folder):
 		dirs[:] = [d for d in dirs if d not in exlude]
 		for file in files:
 			if file.endswith('.md'):
-				data = {}
-				data['slug'] = os.path.join(root, file)
+				data = {'slug': os.path.join(root, file)}
 				with open(data['slug'], 'r') as infile:
 					data['content'] = infile.read()
 				mds.append(data)
 
 def markdown_to_text(markdown_string):
-    """ Converts a markdown string to plaintext """
+	""" Converts a markdown string to plaintext """
 
-    # md -> html -> text since BeautifulSoup can extract text cleanly
-    html = markdown(markdown_string)
+	# md -> html -> text since BeautifulSoup can extract text cleanly
+	html = markdown(markdown_string)
 
-    # remove code snippets
-    html = re.sub(r'<pre>(.*?)</pre>', ' ', html)
-    html = re.sub(r'<code>(.*?)</code >', ' ', html)
+	# remove code snippets
+	html = re.sub(r'<pre>(.*?)</pre>', ' ', html)
+	html = re.sub(r'<code>(.*?)</code >', ' ', html)
 
-    # extract text
-    soup = BeautifulSoup(html, "html.parser")
-    text = ''.join(soup.findAll(text=True))
-
-    return text
+	# extract text
+	soup = BeautifulSoup(html, "html.parser")
+	return ''.join(soup.findAll(text=True))
 
 def tokenize(text):
     return [token for token in simple_preprocess(text) if token not in STOPWORDS]
