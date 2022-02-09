@@ -5,8 +5,7 @@ from slugify import slugify
 
 def scrapying_function(url):
     r = requests.get(url)
-    soup_object = BeautifulSoup(r.text, 'html.parser')
-    return soup_object
+    return BeautifulSoup(r.text, 'html.parser')
 
 def get_course_title_folder(url):
     soup = scrapying_function(url)
@@ -20,8 +19,11 @@ def get_items(url, pattern=''):
     '''
     soup = scrapying_function(url)
     anclas = soup.find_all('a')
-    sources = [ancla.get('href') for ancla in anclas if re.search(pattern, ancla.get('href')) is not None]
-    return sources
+    return [
+        ancla.get('href')
+        for ancla in anclas
+        if re.search(pattern, ancla.get('href')) is not None
+    ]
 
 def get_images(soup_object):
     '''
@@ -47,9 +49,7 @@ def get_moodle_page(url, counter):
 
     Returns: un objeto con los contenidos de la página
     '''
-    page = {}
-    page['id'] = counter
-    page['tipo'] = 'page' if 'mod/page' in url else 'book'
+    page = {'id': counter, 'tipo': 'page' if 'mod/page' in url else 'book'}
     soup = scrapying_function(url)
     page['title'] = soup.title.text
     page['archive'] = slugify(soup.title.text) + '.md'
@@ -66,8 +66,7 @@ def get_moodle_book_chapters(url):
     soup = scrapying_function(url)
     toc = soup.find('div', {'class':'book_toc_numbered'})
     anclas = toc.find_all('a')
-    sources = [url + '&' + str(ancla.get('href')).split('&')[-1] for ancla in anclas]
-    return sources
+    return [f'{url}&{str(ancla.get("href")).split("&")[-1]}' for ancla in anclas]
 
 def summary_generation(list_of_dictionaries):
     '''
